@@ -1,0 +1,4 @@
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable observed_x which has the interface type bram
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable ref_path_array which has the interface type bram
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable u_out which has the interface type bram
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable all_params which has the interface type bram

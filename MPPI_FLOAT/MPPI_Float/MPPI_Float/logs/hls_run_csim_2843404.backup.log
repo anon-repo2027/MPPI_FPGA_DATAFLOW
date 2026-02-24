@@ -1,0 +1,307 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=gaussian_noise_gen.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=datatypes.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/datatypes.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=compute_weight.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=helper.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/helper.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=costs.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/costs.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=smoothning_filter.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nearest_neighbor.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/nearest_neighbor.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=mppi_control.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=dynamics.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=clip.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/clip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calc_control_input' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu9eg-ffvb1156-2-e' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=5' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(25)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_address=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(26)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Cleaning
+slxcmd:0:0: info: [ Cleaned build and execution files ]
+INFO: [HLS 211-200] Compiling source code gaussian_noise_gen.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code compute_weight.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code globals.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code helper.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code costs.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code smoothning_filter.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code nearest_neighbor.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code ref_path.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code mppi_control.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code dynamics.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code clip.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code clip.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code compute_weight.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code costs.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code dynamics.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code gaussian_noise_gen.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code globals.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code helper.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code mppi_control.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code nearest_neighbor.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ref_path.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code smoothning_filter.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+[INFO] Start simulation of pathtracking with MPPI controller
+[INFO] delta_t: 0.04[s], sim_steps: 1000[steps], total_sim_time: 40[s]
+Time: 0.00[s], x=0.00000[m], y=0.00000[m], yaw=0.00000[rad], v=5.00000[m/s], steer=0.33950[rad], accel=-0.09020[m/s^2]
+Time: 0.04[s], x=0.20000[m], y=0.00000[m], yaw=0.02825[rad], v=4.99639[m/s], steer=0.44835[rad], accel=-0.14364[m/s^2]
+Time: 0.08[s], x=0.39978[m], y=0.00565[m], yaw=0.06671[rad], v=4.99065[m/s], steer=0.38017[rad], accel=-0.17975[m/s^2]
+Time: 0.12[s], x=0.59896[m], y=0.01895[m], yaw=0.09862[rad], v=4.98346[m/s], steer=0.26696[rad], accel=-0.18917[m/s^2]
+Time: 0.16[s], x=0.79733[m], y=0.03858[m], yaw=0.12042[rad], v=4.97589[m/s], steer=0.15624[rad], accel=-0.20407[m/s^2]
+Time: 0.20[s], x=0.99492[m], y=0.06249[m], yaw=0.13297[rad], v=4.96773[m/s], steer=0.07743[rad], accel=-0.21566[m/s^2]
+Time: 0.24[s], x=1.19188[m], y=0.08883[m], yaw=0.13913[rad], v=4.95910[m/s], steer=-0.02357[rad], accel=-0.21122[m/s^2]
+Time: 0.28[s], x=1.38832[m], y=0.11634[m], yaw=0.13726[rad], v=4.95065[m/s], steer=-0.07207[rad], accel=-0.20528[m/s^2]
+Time: 0.32[s], x=1.58449[m], y=0.14344[m], yaw=0.13154[rad], v=4.94244[m/s], steer=-0.08018[rad], accel=-0.17835[m/s^2]
+Time: 0.36[s], x=1.78048[m], y=0.16937[m], yaw=0.12519[rad], v=4.93531[m/s], steer=-0.08586[rad], accel=-0.16543[m/s^2]
+Time: 0.40[s], x=1.97634[m], y=0.19402[m], yaw=0.11839[rad], v=4.92869[m/s], steer=-0.08729[rad], accel=-0.14839[m/s^2]
+Time: 0.44[s], x=2.17211[m], y=0.21731[m], yaw=0.11149[rad], v=4.92275[m/s], steer=-0.08577[rad], accel=-0.12251[m/s^2]
+Time: 0.48[s], x=2.36780[m], y=0.23921[m], yaw=0.10472[rad], v=4.91785[m/s], steer=-0.07631[rad], accel=-0.10014[m/s^2]
+Time: 0.52[s], x=2.56344[m], y=0.25978[m], yaw=0.09870[rad], v=4.91385[m/s], steer=-0.06396[rad], accel=-0.10122[m/s^2]
+Time: 0.56[s], x=2.75903[m], y=0.27915[m], yaw=0.09367[rad], v=4.90980[m/s], steer=-0.04311[rad], accel=-0.08983[m/s^2]
+Time: 0.60[s], x=2.95456[m], y=0.29751[m], yaw=0.09028[rad], v=4.90621[m/s], steer=-0.01635[rad], accel=-0.08441[m/s^2]
+Time: 0.64[s], x=3.15001[m], y=0.31521[m], yaw=0.08900[rad], v=4.90283[m/s], steer=0.00674[rad], accel=-0.09325[m/s^2]
+Time: 0.68[s], x=3.34535[m], y=0.33264[m], yaw=0.08952[rad], v=4.89910[m/s], steer=0.00852[rad], accel=-0.09368[m/s^2]
+Time: 0.72[s], x=3.54053[m], y=0.35016[m], yaw=0.09019[rad], v=4.89535[m/s], steer=0.00046[rad], accel=-0.10035[m/s^2]
+Time: 0.76[s], x=3.73555[m], y=0.36779[m], yaw=0.09023[rad], v=4.89134[m/s], steer=-0.01127[rad], accel=-0.09966[m/s^2]
+Time: 0.80[s], x=3.93041[m], y=0.38542[m], yaw=0.08935[rad], v=4.88735[m/s], steer=-0.01360[rad], accel=-0.09437[m/s^2]
+Time: 0.84[s], x=4.12512[m], y=0.40287[m], yaw=0.08828[rad], v=4.88358[m/s], steer=-0.01624[rad], accel=-0.09839[m/s^2]
+Time: 0.88[s], x=4.31970[m], y=0.42009[m], yaw=0.08701[rad], v=4.87964[m/s], steer=-0.02309[rad], accel=-0.10867[m/s^2]
+Time: 0.92[s], x=4.51415[m], y=0.43705[m], yaw=0.08521[rad], v=4.87529[m/s], steer=-0.02475[rad], accel=-0.11792[m/s^2]
+Time: 0.96[s], x=4.70845[m], y=0.45365[m], yaw=0.08328[rad], v=4.87058[m/s], steer=-0.02321[rad], accel=-0.12042[m/s^2]
+Time: 1.00[s], x=4.90260[m], y=0.46986[m], yaw=0.08147[rad], v=4.86576[m/s], steer=-0.01894[rad], accel=-0.11958[m/s^2]
+Time: 1.04[s], x=5.09659[m], y=0.48570[m], yaw=0.08000[rad], v=4.86098[m/s], steer=-0.01552[rad], accel=-0.11840[m/s^2]
+Time: 1.08[s], x=5.29040[m], y=0.50123[m], yaw=0.07879[rad], v=4.85624[m/s], steer=-0.01497[rad], accel=-0.11799[m/s^2]
+Time: 1.12[s], x=5.48405[m], y=0.51652[m], yaw=0.07763[rad], v=4.85152[m/s], steer=-0.01461[rad], accel=-0.11662[m/s^2]
+Time: 1.16[s], x=5.67753[m], y=0.53157[m], yaw=0.07649[rad], v=4.84686[m/s], steer=-0.01210[rad], accel=-0.11548[m/s^2]
+Time: 1.20[s], x=5.87083[m], y=0.54639[m], yaw=0.07555[rad], v=4.84224[m/s], steer=-0.01355[rad], accel=-0.11866[m/s^2]
+Time: 1.24[s], x=6.06397[m], y=0.56101[m], yaw=0.07450[rad], v=4.83749[m/s], steer=-0.01518[rad], accel=-0.12078[m/s^2]
+Time: 1.28[s], x=6.25693[m], y=0.57541[m], yaw=0.07333[rad], v=4.83266[m/s], steer=-0.01612[rad], accel=-0.10980[m/s^2]
+Time: 1.32[s], x=6.44972[m], y=0.58957[m], yaw=0.07208[rad], v=4.82827[m/s], steer=-0.01565[rad], accel=-0.10305[m/s^2]
+Time: 1.36[s], x=6.64235[m], y=0.60348[m], yaw=0.07087[rad], v=4.82415[m/s], steer=-0.01475[rad], accel=-0.10031[m/s^2]
+Time: 1.40[s], x=6.83483[m], y=0.61715[m], yaw=0.06973[rad], v=4.82013[m/s], steer=-0.01534[rad], accel=-0.09676[m/s^2]
+Time: 1.44[s], x=7.02717[m], y=0.63058[m], yaw=0.06855[rad], v=4.81626[m/s], steer=-0.01768[rad], accel=-0.09119[m/s^2]
+Time: 1.48[s], x=7.21937[m], y=0.64378[m], yaw=0.06719[rad], v=4.81262[m/s], steer=-0.02077[rad], accel=-0.08061[m/s^2]
+Time: 1.52[s], x=7.41144[m], y=0.65670[m], yaw=0.06559[rad], v=4.80939[m/s], steer=-0.02083[rad], accel=-0.07755[m/s^2]
+Time: 1.56[s], x=7.60340[m], y=0.66931[m], yaw=0.06399[rad], v=4.80629[m/s], steer=-0.02051[rad], accel=-0.07090[m/s^2]
+Time: 1.60[s], x=7.79526[m], y=0.68160[m], yaw=0.06241[rad], v=4.80345[m/s], steer=-0.01655[rad], accel=-0.06581[m/s^2]
+Time: 1.64[s], x=7.98702[m], y=0.69358[m], yaw=0.06114[rad], v=4.80082[m/s], steer=-0.01542[rad], accel=-0.05434[m/s^2]
+Time: 1.68[s], x=8.17870[m], y=0.70532[m], yaw=0.05995[rad], v=4.79865[m/s], steer=-0.01832[rad], accel=-0.04662[m/s^2]
+Time: 1.72[s], x=8.37030[m], y=0.71682[m], yaw=0.05854[rad], v=4.79678[m/s], steer=-0.01842[rad], accel=-0.04057[m/s^2]
+Time: 1.76[s], x=8.56184[m], y=0.72804[m], yaw=0.05713[rad], v=4.79516[m/s], steer=-0.01907[rad], accel=-0.03563[m/s^2]
+Time: 1.80[s], x=8.75333[m], y=0.73900[m], yaw=0.05567[rad], v=4.79374[m/s], steer=-0.01402[rad], accel=-0.03149[m/s^2]
+Time: 1.84[s], x=8.94478[m], y=0.74967[m], yaw=0.05459[rad], v=4.79248[m/s], steer=-0.00839[rad], accel=-0.03311[m/s^2]
+Time: 1.88[s], x=9.13620[m], y=0.76013[m], yaw=0.05395[rad], v=4.79115[m/s], steer=-0.00609[rad], accel=-0.03819[m/s^2]
+Time: 1.92[s], x=9.32757[m], y=0.77046[m], yaw=0.05348[rad], v=4.78962[m/s], steer=-0.00565[rad], accel=-0.03990[m/s^2]
+Time: 1.96[s], x=9.51888[m], y=0.78070[m], yaw=0.05305[rad], v=4.78803[m/s], steer=-0.00775[rad], accel=-0.04093[m/s^2]
+Time: 2.00[s], x=9.71013[m], y=0.79086[m], yaw=0.05246[rad], v=4.78639[m/s], steer=-0.01545[rad], accel=-0.04013[m/s^2]
+Time: 2.04[s], x=9.90132[m], y=0.80089[m], yaw=0.05127[rad], v=4.78479[m/s], steer=-0.01540[rad], accel=-0.04009[m/s^2]
+Time: 2.08[s], x=10.09246[m], y=0.81070[m], yaw=0.05009[rad], v=4.78318[m/s], steer=-0.01297[rad], accel=-0.03735[m/s^2]
+Time: 2.12[s], x=10.28355[m], y=0.82028[m], yaw=0.04910[rad], v=4.78169[m/s], steer=-0.00839[rad], accel=-0.03020[m/s^2]
+Time: 2.16[s], x=10.47459[m], y=0.82967[m], yaw=0.04846[rad], v=4.78048[m/s], steer=-0.00521[rad], accel=-0.02410[m/s^2]
+Time: 2.20[s], x=10.66558[m], y=0.83893[m], yaw=0.04806[rad], v=4.77952[m/s], steer=-0.00651[rad], accel=-0.01734[m/s^2]
+Time: 2.24[s], x=10.85654[m], y=0.84812[m], yaw=0.04756[rad], v=4.77882[m/s], steer=-0.01144[rad], accel=-0.00817[m/s^2]
+Time: 2.28[s], x=11.04748[m], y=0.85721[m], yaw=0.04669[rad], v=4.77850[m/s], steer=-0.01264[rad], accel=-0.00004[m/s^2]
+Time: 2.32[s], x=11.23841[m], y=0.86613[m], yaw=0.04572[rad], v=4.77850[m/s], steer=-0.01149[rad], accel=0.00283[m/s^2]
+Time: 2.36[s], x=11.42935[m], y=0.87486[m], yaw=0.04484[rad], v=4.77861[m/s], steer=-0.00824[rad], accel=0.00627[m/s^2]
+Time: 2.40[s], x=11.62030[m], y=0.88343[m], yaw=0.04421[rad], v=4.77886[m/s], steer=-0.00330[rad], accel=0.00794[m/s^2]
+Time: 2.44[s], x=11.81127[m], y=0.89188[m], yaw=0.04396[rad], v=4.77918[m/s], steer=0.01610[rad], accel=0.01121[m/s^2]
+Time: 2.48[s], x=12.00225[m], y=0.90028[m], yaw=0.04519[rad], v=4.77963[m/s], steer=-0.00411[rad], accel=0.01093[m/s^2]
+Time: 2.52[s], x=12.19324[m], y=0.90892[m], yaw=0.04488[rad], v=4.78006[m/s], steer=-0.01250[rad], accel=0.00558[m/s^2]
+Time: 2.56[s], x=12.38425[m], y=0.91750[m], yaw=0.04392[rad], v=4.78029[m/s], steer=0.00554[rad], accel=0.01110[m/s^2]
+Time: 2.60[s], x=12.57528[m], y=0.92589[m], yaw=0.04434[rad], v=4.78073[m/s], steer=-0.00493[rad], accel=0.00914[m/s^2]
+Time: 2.64[s], x=12.76632[m], y=0.93437[m], yaw=0.04397[rad], v=4.78110[m/s], steer=0.00568[rad], accel=0.00498[m/s^2]
+Time: 2.68[s], x=12.95738[m], y=0.94278[m], yaw=0.04440[rad], v=4.78129[m/s], steer=-0.02472[rad], accel=-0.00170[m/s^2]
+Time: 2.72[s], x=13.14844[m], y=0.95127[m], yaw=0.04251[rad], v=4.78123[m/s], steer=-0.00049[rad], accel=-0.00521[m/s^2]
+Time: 2.76[s], x=13.33952[m], y=0.95939[m], yaw=0.04247[rad], v=4.78102[m/s], steer=0.00914[rad], accel=-0.00119[m/s^2]
+Time: 2.80[s], x=13.53059[m], y=0.96751[m], yaw=0.04317[rad], v=4.78097[m/s], steer=0.00640[rad], accel=-0.00127[m/s^2]
+Time: 2.84[s], x=13.72165[m], y=0.97577[m], yaw=0.04366[rad], v=4.78092[m/s], steer=0.00222[rad], accel=-0.00177[m/s^2]
+Time: 2.88[s], x=13.91270[m], y=0.98411[m], yaw=0.04383[rad], v=4.78085[m/s], steer=-0.00594[rad], accel=0.00194[m/s^2]
+Time: 2.92[s], x=14.10375[m], y=0.99249[m], yaw=0.04338[rad], v=4.78093[m/s], steer=0.00053[rad], accel=0.00256[m/s^2]
+Time: 2.96[s], x=14.29481[m], y=1.00079[m], yaw=0.04342[rad], v=4.78103[m/s], steer=-0.00593[rad], accel=0.01021[m/s^2]
+Time: 3.00[s], x=14.48587[m], y=1.00909[m], yaw=0.04297[rad], v=4.78144[m/s], steer=-0.01614[rad], accel=0.00356[m/s^2]
+Time: 3.04[s], x=14.67695[m], y=1.01730[m], yaw=0.04173[rad], v=4.78158[m/s], steer=-0.01902[rad], accel=0.00866[m/s^2]
+Time: 3.08[s], x=14.86805[m], y=1.02528[m], yaw=0.04028[rad], v=4.78193[m/s], steer=-0.00921[rad], accel=-0.00035[m/s^2]
+Time: 3.12[s], x=15.05917[m], y=1.03298[m], yaw=0.03957[rad], v=4.78191[m/s], steer=-0.01262[rad], accel=-0.00847[m/s^2]
+Time: 3.16[s], x=15.25030[m], y=1.04055[m], yaw=0.03861[rad], v=4.78158[m/s], steer=-0.00254[rad], accel=-0.00752[m/s^2]
+Time: 3.20[s], x=15.44142[m], y=1.04793[m], yaw=0.03841[rad], v=4.78127[m/s], steer=-0.01066[rad], accel=-0.00823[m/s^2]
+Time: 3.24[s], x=15.63253[m], y=1.05528[m], yaw=0.03760[rad], v=4.78095[m/s], steer=-0.00822[rad], accel=-0.00586[m/s^2]
+Time: 3.28[s], x=15.82363[m], y=1.06246[m], yaw=0.03697[rad], v=4.78071[m/s], steer=-0.01577[rad], accel=-0.01323[m/s^2]
+Time: 3.32[s], x=16.01473[m], y=1.06953[m], yaw=0.03576[rad], v=4.78018[m/s], steer=-0.01643[rad], accel=-0.01121[m/s^2]
+Time: 3.36[s], x=16.20581[m], y=1.07637[m], yaw=0.03450[rad], v=4.77973[m/s], steer=-0.01322[rad], accel=-0.00615[m/s^2]
+Time: 3.40[s], x=16.39689[m], y=1.08296[m], yaw=0.03349[rad], v=4.77949[m/s], steer=-0.00686[rad], accel=-0.00287[m/s^2]
+Time: 3.44[s], x=16.58796[m], y=1.08937[m], yaw=0.03297[rad], v=4.77937[m/s], steer=-0.00416[rad], accel=0.00540[m/s^2]
+Time: 3.48[s], x=16.77903[m], y=1.09567[m], yaw=0.03265[rad], v=4.77959[m/s], steer=-0.00359[rad], accel=0.01958[m/s^2]
+Time: 3.52[s], x=16.97011[m], y=1.10191[m], yaw=0.03238[rad], v=4.78037[m/s], steer=-0.00660[rad], accel=0.04191[m/s^2]
+Time: 3.56[s], x=17.16123[m], y=1.10810[m], yaw=0.03187[rad], v=4.78205[m/s], steer=-0.00783[rad], accel=0.05750[m/s^2]
+Time: 3.60[s], x=17.35241[m], y=1.11419[m], yaw=0.03127[rad], v=4.78435[m/s], steer=-0.00880[rad], accel=0.06604[m/s^2]
+Time: 3.64[s], x=17.54369[m], y=1.12018[m], yaw=0.03060[rad], v=4.78699[m/s], steer=-0.00744[rad], accel=0.07126[m/s^2]
+Time: 3.68[s], x=17.73508[m], y=1.12603[m], yaw=0.03003[rad], v=4.78984[m/s], steer=-0.00797[rad], accel=0.07994[m/s^2]
+Time: 3.72[s], x=17.92659[m], y=1.13179[m], yaw=0.02942[rad], v=4.79304[m/s], steer=-0.01130[rad], accel=0.07642[m/s^2]
+Time: 3.76[s], x=18.11823[m], y=1.13743[m], yaw=0.02855[rad], v=4.79609[m/s], steer=-0.01315[rad], accel=0.07413[m/s^2]
+Time: 3.80[s], x=18.30999[m], y=1.14290[m], yaw=0.02754[rad], v=4.79906[m/s], steer=-0.01805[rad], accel=0.07613[m/s^2]
+Time: 3.84[s], x=18.50188[m], y=1.14819[m], yaw=0.02616[rad], v=4.80210[m/s], steer=-0.01393[rad], accel=0.07832[m/s^2]
+Time: 3.88[s], x=18.69390[m], y=1.15321[m], yaw=0.02508[rad], v=4.80524[m/s], steer=-0.01656[rad], accel=0.07150[m/s^2]
+Time: 3.92[s], x=18.88605[m], y=1.15803[m], yaw=0.02381[rad], v=4.80810[m/s], steer=-0.01905[rad], accel=0.05692[m/s^2]
+Time: 3.96[s], x=19.07832[m], y=1.16261[m], yaw=0.02235[rad], v=4.81037[m/s], steer=-0.01937[rad], accel=0.04709[m/s^2]
+Time: 4.00[s], x=19.27069[m], y=1.16691[m], yaw=0.02086[rad], v=4.81226[m/s], steer=-0.01717[rad], accel=0.04077[m/s^2]
+Time: 4.04[s], x=19.46313[m], y=1.17093[m], yaw=0.01953[rad], v=4.81389[m/s], steer=-0.01769[rad], accel=0.04193[m/s^2]
+Time: 4.08[s], x=19.65565[m], y=1.17469[m], yaw=0.01817[rad], v=4.81557[m/s], steer=-0.01960[rad], accel=0.03956[m/s^2]
+Time: 4.12[s], x=19.84824[m], y=1.17819[m], yaw=0.01666[rad], v=4.81715[m/s], steer=-0.01571[rad], accel=0.04698[m/s^2]
+Time: 4.16[s], x=20.04090[m], y=1.18140[m], yaw=0.01545[rad], v=4.81903[m/s], steer=-0.01488[rad], accel=0.04501[m/s^2]
+Time: 4.20[s], x=20.23364[m], y=1.18437[m], yaw=0.01430[rad], v=4.82083[m/s], steer=-0.01412[rad], accel=0.04639[m/s^2]
+Time: 4.24[s], x=20.42645[m], y=1.18713[m], yaw=0.01321[rad], v=4.82268[m/s], steer=-0.01601[rad], accel=0.04701[m/s^2]
+Time: 4.28[s], x=20.61934[m], y=1.18968[m], yaw=0.01198[rad], v=4.82456[m/s], steer=-0.01589[rad], accel=0.04456[m/s^2]
+Time: 4.32[s], x=20.81231[m], y=1.19199[m], yaw=0.01075[rad], v=4.82635[m/s], steer=-0.01213[rad], accel=0.04007[m/s^2]
+Time: 4.36[s], x=21.00536[m], y=1.19407[m], yaw=0.00981[rad], v=4.82795[m/s], steer=-0.01058[rad], accel=0.03880[m/s^2]
+Time: 4.40[s], x=21.19847[m], y=1.19596[m], yaw=0.00900[rad], v=4.82950[m/s], steer=-0.01143[rad], accel=0.03685[m/s^2]
+Time: 4.44[s], x=21.39164[m], y=1.19770[m], yaw=0.00811[rad], v=4.83098[m/s], steer=-0.01448[rad], accel=0.03348[m/s^2]
+Time: 4.48[s], x=21.58487[m], y=1.19927[m], yaw=0.00699[rad], v=4.83232[m/s], steer=-0.01664[rad], accel=0.03237[m/s^2]
+Time: 4.52[s], x=21.77816[m], y=1.20062[m], yaw=0.00571[rad], v=4.83361[m/s], steer=-0.01773[rad], accel=0.02845[m/s^2]
+Time: 4.56[s], x=21.97150[m], y=1.20172[m], yaw=0.00433[rad], v=4.83475[m/s], steer=-0.01245[rad], accel=0.02682[m/s^2]
+Time: 4.60[s], x=22.16489[m], y=1.20256[m], yaw=0.00337[rad], v=4.83582[m/s], steer=-0.00555[rad], accel=0.02884[m/s^2]
+Time: 4.64[s], x=22.35832[m], y=1.20321[m], yaw=0.00294[rad], v=4.83697[m/s], steer=-0.00083[rad], accel=0.02959[m/s^2]
+Time: 4.68[s], x=22.55180[m], y=1.20378[m], yaw=0.00288[rad], v=4.83816[m/s], steer=-0.00064[rad], accel=0.02942[m/s^2]
+Time: 4.72[s], x=22.74532[m], y=1.20434[m], yaw=0.00283[rad], v=4.83933[m/s], steer=-0.00274[rad], accel=0.03167[m/s^2]
+Time: 4.76[s], x=22.93890[m], y=1.20488[m], yaw=0.00262[rad], v=4.84060[m/s], steer=-0.00494[rad], accel=0.03365[m/s^2]
+Time: 4.80[s], x=23.13252[m], y=1.20539[m], yaw=0.00223[rad], v=4.84195[m/s], steer=-0.00197[rad], accel=0.03704[m/s^2]
+Time: 4.84[s], x=23.32620[m], y=1.20582[m], yaw=0.00208[rad], v=4.84343[m/s], steer=0.00349[rad], accel=0.04069[m/s^2]
+Time: 4.88[s], x=23.51993[m], y=1.20623[m], yaw=0.00235[rad], v=4.84506[m/s], steer=0.00998[rad], accel=0.04841[m/s^2]
+Time: 4.92[s], x=23.71374[m], y=1.20668[m], yaw=0.00312[rad], v=4.84699[m/s], steer=0.02195[rad], accel=0.05463[m/s^2]
+Time: 4.96[s], x=23.90761[m], y=1.20729[m], yaw=0.00483[rad], v=4.84918[m/s], steer=0.02849[rad], accel=0.06697[m/s^2]
+Time: 5.00[s], x=24.10158[m], y=1.20822[m], yaw=0.00704[rad], v=4.85186[m/s], steer=0.04153[rad], accel=0.08374[m/s^2]
+Time: 5.04[s], x=24.29565[m], y=1.20959[m], yaw=0.01026[rad], v=4.85521[m/s], steer=0.04844[rad], accel=0.10369[m/s^2]
+Time: 5.08[s], x=24.48985[m], y=1.21158[m], yaw=0.01403[rad], v=4.85935[m/s], steer=0.05365[rad], accel=0.10853[m/s^2]
+Time: 5.12[s], x=24.68420[m], y=1.21431[m], yaw=0.01820[rad], v=4.86370[m/s], steer=0.05205[rad], accel=0.10839[m/s^2]
+Time: 5.16[s], x=24.87872[m], y=1.21785[m], yaw=0.02226[rad], v=4.86803[m/s], steer=0.05762[rad], accel=0.11948[m/s^2]
+Time: 5.20[s], x=25.07339[m], y=1.22218[m], yaw=0.02675[rad], v=4.87281[m/s], steer=0.05923[rad], accel=0.12454[m/s^2]
+Time: 5.24[s], x=25.26823[m], y=1.22740[m], yaw=0.03137[rad], v=4.87779[m/s], steer=0.06395[rad], accel=0.11653[m/s^2]
+Time: 5.28[s], x=25.46325[m], y=1.23352[m], yaw=0.03637[rad], v=4.88245[m/s], steer=0.07199[rad], accel=0.12169[m/s^2]
+Time: 5.32[s], x=25.65842[m], y=1.24062[m], yaw=0.04201[rad], v=4.88732[m/s], steer=0.06586[rad], accel=0.11824[m/s^2]
+Time: 5.36[s], x=25.85374[m], y=1.24883[m], yaw=0.04716[rad], v=4.89205[m/s], steer=0.04184[rad], accel=0.11596[m/s^2]
+Time: 5.40[s], x=26.04920[m], y=1.25806[m], yaw=0.05044[rad], v=4.89669[m/s], steer=0.03450[rad], accel=0.11438[m/s^2]
+Time: 5.44[s], x=26.24482[m], y=1.26793[m], yaw=0.05314[rad], v=4.90126[m/s], steer=0.03513[rad], accel=0.10054[m/s^2]
+Time: 5.48[s], x=26.44059[m], y=1.27834[m], yaw=0.05590[rad], v=4.90529[m/s], steer=0.05622[rad], accel=0.08107[m/s^2]
+Time: 5.52[s], x=26.63650[m], y=1.28931[m], yaw=0.06032[rad], v=4.90853[m/s], steer=0.06372[rad], accel=0.05195[m/s^2]
+Time: 5.56[s], x=26.83248[m], y=1.30114[m], yaw=0.06533[rad], v=4.91061[m/s], steer=0.08532[rad], accel=0.02361[m/s^2]
+Time: 5.60[s], x=27.02849[m], y=1.31397[m], yaw=0.07205[rad], v=4.91155[m/s], steer=0.11359[rad], accel=0.00656[m/s^2]
+Time: 5.64[s], x=27.22444[m], y=1.32811[m], yaw=0.08101[rad], v=4.91181[m/s], steer=0.12990[rad], accel=-0.01395[m/s^2]
+Time: 5.68[s], x=27.42027[m], y=1.34401[m], yaw=0.09128[rad], v=4.91125[m/s], steer=0.13461[rad], accel=-0.03611[m/s^2]
+Time: 5.72[s], x=27.61590[m], y=1.36192[m], yaw=0.10192[rad], v=4.90981[m/s], steer=0.14820[rad], accel=-0.05448[m/s^2]
+Time: 5.76[s], x=27.81127[m], y=1.38190[m], yaw=0.11365[rad], v=4.90763[m/s], steer=0.17009[rad], accel=-0.06756[m/s^2]
+Time: 5.80[s], x=28.00631[m], y=1.40416[m], yaw=0.12714[rad], v=4.90493[m/s], steer=0.20130[rad], accel=-0.08186[m/s^2]
+Time: 5.84[s], x=28.20093[m], y=1.42904[m], yaw=0.14315[rad], v=4.90165[m/s], steer=0.23503[rad], accel=-0.10617[m/s^2]
+Time: 5.88[s], x=28.39499[m], y=1.45701[m], yaw=0.16193[rad], v=4.89741[m/s], steer=0.27289[rad], accel=-0.12593[m/s^2]
+Time: 5.92[s], x=28.58832[m], y=1.48859[m], yaw=0.18386[rad], v=4.89237[m/s], steer=0.32086[rad], accel=-0.14699[m/s^2]
+Time: 5.96[s], x=28.78072[m], y=1.52437[m], yaw=0.20988[rad], v=4.88649[m/s], steer=0.37723[rad], accel=-0.16202[m/s^2]
+Time: 6.00[s], x=28.97189[m], y=1.56509[m], yaw=0.24085[rad], v=4.88001[m/s], steer=0.43388[rad], accel=-0.17701[m/s^2]
+Time: 6.04[s], x=29.16145[m], y=1.61165[m], yaw=0.27703[rad], v=4.87293[m/s], steer=0.49494[rad], accel=-0.18412[m/s^2]
+Time: 6.08[s], x=29.34894[m], y=1.66496[m], yaw=0.31911[rad], v=4.86556[m/s], steer=0.55175[rad], accel=-0.18130[m/s^2]
+Time: 6.12[s], x=29.53374[m], y=1.72602[m], yaw=0.36703[rad], v=4.85831[m/s], steer=0.58303[rad], accel=-0.17323[m/s^2]
+Time: 6.16[s], x=29.71512[m], y=1.79576[m], yaw=0.41829[rad], v=4.85138[m/s], steer=0.60856[rad], accel=-0.16528[m/s^2]
+Time: 6.20[s], x=29.89245[m], y=1.87458[m], yaw=0.47238[rad], v=4.84477[m/s], steer=0.61665[rad], accel=-0.15850[m/s^2]
+Time: 6.24[s], x=30.06502[m], y=1.96276[m], yaw=0.52733[rad], v=4.83843[m/s], steer=0.61742[rad], accel=-0.14716[m/s^2]
+Time: 6.28[s], x=30.23226[m], y=2.06015[m], yaw=0.58229[rad], v=4.83255[m/s], steer=0.61392[rad], accel=-0.12813[m/s^2]
+Time: 6.32[s], x=30.39371[m], y=2.16646[m], yaw=0.63679[rad], v=4.82742[m/s], steer=0.60132[rad], accel=-0.10712[m/s^2]
+Time: 6.36[s], x=30.54896[m], y=2.28127[m], yaw=0.68978[rad], v=4.82314[m/s], steer=0.58451[rad], accel=-0.08503[m/s^2]
+Time: 6.40[s], x=30.69778[m], y=2.40404[m], yaw=0.74084[rad], v=4.81974[m/s], steer=0.56033[rad], accel=-0.06306[m/s^2]
+Time: 6.44[s], x=30.84004[m], y=2.53416[m], yaw=0.78922[rad], v=4.81721[m/s], steer=0.53069[rad], accel=-0.04248[m/s^2]
+Time: 6.48[s], x=30.97577[m], y=2.67093[m], yaw=0.83445[rad], v=4.81551[m/s], steer=0.50121[rad], accel=-0.02333[m/s^2]
+Time: 6.52[s], x=31.10513[m], y=2.81365[m], yaw=0.87666[rad], v=4.81458[m/s], steer=0.46828[rad], accel=-0.00920[m/s^2]
+Time: 6.56[s], x=31.22833[m], y=2.96167[m], yaw=0.91563[rad], v=4.81421[m/s], steer=0.43673[rad], accel=0.00087[m/s^2]
+Time: 6.60[s], x=31.34566[m], y=3.11437[m], yaw=0.95158[rad], v=4.81425[m/s], steer=0.41142[rad], accel=0.01306[m/s^2]
+Time: 6.64[s], x=31.45743[m], y=3.27118[m], yaw=0.98519[rad], v=4.81477[m/s], steer=0.38861[rad], accel=0.02348[m/s^2]
+Time: 6.68[s], x=31.56387[m], y=3.43168[m], yaw=1.01673[rad], v=4.81571[m/s], steer=0.36833[rad], accel=0.03347[m/s^2]
+Time: 6.72[s], x=31.66522[m], y=3.59549[m], yaw=1.04647[rad], v=4.81705[m/s], steer=0.34723[rad], accel=0.03954[m/s^2]
+Time: 6.76[s], x=31.76169[m], y=3.76229[m], yaw=1.07436[rad], v=4.81863[m/s], steer=0.32819[rad], accel=0.04329[m/s^2]
+Time: 6.80[s], x=31.85349[m], y=3.93177[m], yaw=1.10062[rad], v=4.82036[m/s], steer=0.31310[rad], accel=0.04670[m/s^2]
+Time: 6.84[s], x=31.94084[m], y=4.10366[m], yaw=1.12559[rad], v=4.82223[m/s], steer=0.30218[rad], accel=0.05039[m/s^2]
+Time: 6.88[s], x=32.02391[m], y=4.27775[m], yaw=1.14964[rad], v=4.82424[m/s], steer=0.29191[rad], accel=0.05019[m/s^2]
+Time: 6.92[s], x=32.10280[m], y=4.45386[m], yaw=1.17283[rad], v=4.82625[m/s], steer=0.28394[rad], accel=0.04809[m/s^2]
+Time: 6.96[s], x=32.17761[m], y=4.63182[m], yaw=1.19537[rad], v=4.82818[m/s], steer=0.28252[rad], accel=0.04971[m/s^2]
+Time: 7.00[s], x=32.24843[m], y=4.81149[m], yaw=1.21779[rad], v=4.83016[m/s], steer=0.28294[rad], accel=0.05142[m/s^2]
+Time: 7.04[s], x=32.31522[m], y=4.99279[m], yaw=1.24026[rad], v=4.83222[m/s], steer=0.28543[rad], accel=0.05459[m/s^2]
+Time: 7.08[s], x=32.37796[m], y=5.17561[m], yaw=1.26295[rad], v=4.83440[m/s], steer=0.28552[rad], accel=0.05454[m/s^2]
+Time: 7.12[s], x=32.43655[m], y=5.35990[m], yaw=1.28565[rad], v=4.83659[m/s], steer=0.28605[rad], accel=0.05351[m/s^2]
+Time: 7.16[s], x=32.49097[m], y=5.54555[m], yaw=1.30841[rad], v=4.83873[m/s], steer=0.28799[rad], accel=0.05273[m/s^2]
+Time: 7.20[s], x=32.54117[m], y=5.73248[m], yaw=1.33135[rad], v=4.84084[m/s], steer=0.29152[rad], accel=0.05276[m/s^2]
+Time: 7.24[s], x=32.58710[m], y=5.92058[m], yaw=1.35459[rad], v=4.84295[m/s], steer=0.29267[rad], accel=0.04968[m/s^2]
+Time: 7.28[s], x=32.62865[m], y=6.10979[m], yaw=1.37794[rad], v=4.84493[m/s], steer=0.29744[rad], accel=0.04966[m/s^2]
+Time: 7.32[s], x=32.66580[m], y=6.30000[m], yaw=1.40170[rad], v=4.84692[m/s], steer=0.30115[rad], accel=0.04868[m/s^2]
+Time: 7.36[s], x=32.69843[m], y=6.49111[m], yaw=1.42579[rad], v=4.84887[m/s], steer=0.30496[rad], accel=0.04838[m/s^2]
+Time: 7.40[s], x=32.72645[m], y=6.68303[m], yaw=1.45021[rad], v=4.85080[m/s], steer=0.30947[rad], accel=0.04958[m/s^2]
+Time: 7.44[s], x=32.74979[m], y=6.87565[m], yaw=1.47502[rad], v=4.85278[m/s], steer=0.31037[rad], accel=0.04772[m/s^2]
+Time: 7.48[s], x=32.76836[m], y=7.06887[m], yaw=1.49993[rad], v=4.85469[m/s], steer=0.31075[rad], accel=0.04513[m/s^2]
+Time: 7.52[s], x=32.78211[m], y=7.26257[m], yaw=1.52487[rad], v=4.85650[m/s], steer=0.31141[rad], accel=0.04269[m/s^2]
+Time: 7.56[s], x=32.79103[m], y=7.45663[m], yaw=1.54989[rad], v=4.85821[m/s], steer=0.31352[rad], accel=0.04119[m/s^2]
+Time: 7.60[s], x=32.79509[m], y=7.65091[m], yaw=1.57509[rad], v=4.85985[m/s], steer=0.31722[rad], accel=0.04150[m/s^2]
+Time: 7.64[s], x=32.79425[m], y=7.84530[m], yaw=1.60061[rad], v=4.86151[m/s], steer=0.31920[rad], accel=0.04282[m/s^2]
+Time: 7.68[s], x=32.78846[m], y=8.03968[m], yaw=1.62632[rad], v=4.86323[m/s], steer=0.31936[rad], accel=0.04264[m/s^2]
+Time: 7.72[s], x=32.77766[m], y=8.23391[m], yaw=1.65205[rad], v=4.86493[m/s], steer=0.31943[rad], accel=0.04278[m/s^2]
+Time: 7.76[s], x=32.76186[m], y=8.42786[m], yaw=1.67780[rad], v=4.86664[m/s], steer=0.32022[rad], accel=0.04352[m/s^2]
+Time: 7.80[s], x=32.74107[m], y=8.62142[m], yaw=1.70362[rad], v=4.86838[m/s], steer=0.31778[rad], accel=0.04089[m/s^2]
+Time: 7.84[s], x=32.71528[m], y=8.81444[m], yaw=1.72924[rad], v=4.87002[m/s], steer=0.31479[rad], accel=0.03690[m/s^2]
+Time: 7.88[s], x=32.68455[m], y=9.00680[m], yaw=1.75462[rad], v=4.87150[m/s], steer=0.31630[rad], accel=0.03642[m/s^2]
+Time: 7.92[s], x=32.64893[m], y=9.19837[m], yaw=1.78013[rad], v=4.87295[m/s], steer=0.31770[rad], accel=0.03572[m/s^2]
+Time: 7.96[s], x=32.60843[m], y=9.38904[m], yaw=1.80577[rad], v=4.87438[m/s], steer=0.31956[rad], accel=0.03632[m/s^2]
+Time: 8.00[s], x=32.56303[m], y=9.57866[m], yaw=1.83157[rad], v=4.87583[m/s], steer=0.31760[rad], accel=0.03401[m/s^2]
+Time: 8.04[s], x=32.51275[m], y=9.76709[m], yaw=1.85722[rad], v=4.87720[m/s], steer=0.31524[rad], accel=0.03084[m/s^2]
+Time: 8.08[s], x=32.45763[m], y=9.95424[m], yaw=1.88267[rad], v=4.87843[m/s], steer=0.31389[rad], accel=0.02806[m/s^2]
+Time: 8.12[s], x=32.39776[m], y=10.13996[m], yaw=1.90800[rad], v=4.87955[m/s], steer=0.31389[rad], accel=0.02617[m/s^2]
+Time: 8.16[s], x=32.33318[m], y=10.32415[m], yaw=1.93335[rad], v=4.88060[m/s], steer=0.31610[rad], accel=0.02609[m/s^2]
+Time: 8.20[s], x=32.26395[m], y=10.50668[m], yaw=1.95889[rad], v=4.88164[m/s], steer=0.31527[rad], accel=0.02364[m/s^2]
+Time: 8.24[s], x=32.19005[m], y=10.68743[m], yaw=1.98436[rad], v=4.88259[m/s], steer=0.31390[rad], accel=0.02071[m/s^2]
+Time: 8.28[s], x=32.11156[m], y=10.86626[m], yaw=2.00972[rad], v=4.88342[m/s], steer=0.31445[rad], accel=0.02088[m/s^2]
+Time: 8.32[s], x=32.02855[m], y=11.04308[m], yaw=2.03514[rad], v=4.88425[m/s], steer=0.31581[rad], accel=0.02193[m/s^2]
+Time: 8.36[s], x=31.94106[m], y=11.21777[m], yaw=2.06067[rad], v=4.88513[m/s], steer=0.31376[rad], accel=0.01967[m/s^2]
+Time: 8.40[s], x=31.84912[m], y=11.39019[m], yaw=2.08603[rad], v=4.88591[m/s], steer=0.31523[rad], accel=0.02045[m/s^2]
+Time: 8.44[s], x=31.75282[m], y=11.56026[m], yaw=2.11153[rad], v=4.88673[m/s], steer=0.31571[rad], accel=0.01992[m/s^2]
+Time: 8.48[s], x=31.65220[m], y=11.72784[m], yaw=2.13706[rad], v=4.88753[m/s], steer=0.31624[rad], accel=0.01959[m/s^2]
+Time: 8.52[s], x=31.54731[m], y=11.89282[m], yaw=2.16265[rad], v=4.88831[m/s], steer=0.31743[rad], accel=0.02042[m/s^2]
+Time: 8.56[s], x=31.43822[m], y=12.05510[m], yaw=2.18835[rad], v=4.88913[m/s], steer=0.31529[rad], accel=0.01819[m/s^2]
+Time: 8.60[s], x=31.32498[m], y=12.21454[m], yaw=2.21386[rad], v=4.88986[m/s], steer=0.31299[rad], accel=0.01507[m/s^2]
+Time: 8.64[s], x=31.20770[m], y=12.37107[m], yaw=2.23918[rad], v=4.89046[m/s], steer=0.31143[rad], accel=0.01205[m/s^2]
+Time: 8.68[s], x=31.08647[m], y=12.52459[m], yaw=2.26437[rad], v=4.89094[m/s], steer=0.31189[rad], accel=0.01007[m/s^2]
+Time: 8.72[s], x=30.96140[m], y=12.67503[m], yaw=2.28960[rad], v=4.89134[m/s], steer=0.31379[rad], accel=0.00994[m/s^2]
+Time: 8.76[s], x=30.83256[m], y=12.82228[m], yaw=2.31500[rad], v=4.89174[m/s], steer=0.31402[rad], accel=0.01074[m/s^2]
+Time: 8.80[s], x=30.70002[m], y=12.96622[m], yaw=2.34042[rad], v=4.89217[m/s], steer=0.31163[rad], accel=0.01013[m/s^2]
+Time: 8.84[s], x=30.56385[m], y=13.10676[m], yaw=2.36563[rad], v=4.89258[m/s], steer=0.30736[rad], accel=0.01007[m/s^2]
+Time: 8.88[s], x=30.42416[m], y=13.24383[m], yaw=2.39048[rad], v=4.89298[m/s], steer=0.30117[rad], accel=0.01094[m/s^2]
+Time: 8.92[s], x=30.28111[m], y=13.37739[m], yaw=2.41480[rad], v=4.89342[m/s], steer=0.29320[rad], accel=0.01364[m/s^2]
+Time: 8.96[s], x=30.13483[m], y=13.50746[m], yaw=2.43843[rad], v=4.89396[m/s], steer=0.28126[rad], accel=0.01413[m/s^2]
+Time: 9.00[s], x=29.98551[m], y=13.63404[m], yaw=2.46106[rad], v=4.89453[m/s], steer=0.26639[rad], accel=0.01358[m/s^2]
+Time: 9.04[s], x=29.83334[m], y=13.75723[m], yaw=2.48243[rad], v=4.89507[m/s], steer=0.24930[rad], accel=0.01324[m/s^2]

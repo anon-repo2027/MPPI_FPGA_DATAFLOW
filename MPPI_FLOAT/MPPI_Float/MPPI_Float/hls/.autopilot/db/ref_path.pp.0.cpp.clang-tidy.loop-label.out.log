@@ -1,0 +1,20 @@
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2278:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2278:5: note: FIX-IT applied suggested code changes
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2292:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2292:5: note: FIX-IT applied suggested code changes
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2306:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:2306:5: note: FIX-IT applied suggested code changes
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:3928:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/.autopilot/db/ref_path.pp.0.cpp:3928:7: note: FIX-IT applied suggested code changes

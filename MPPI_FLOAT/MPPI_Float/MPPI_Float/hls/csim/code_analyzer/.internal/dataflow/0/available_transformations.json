@@ -1,0 +1,157 @@
+[
+    {
+        "action": "merge",
+        "srcTask": "3",
+        "targetTask": "4"
+    },
+    {
+        "action": "merge",
+        "srcTask": "4",
+        "targetTask": "3"
+    },
+    {
+        "action": "merge",
+        "srcTask": "4",
+        "targetTask": "5"
+    },
+    {
+        "action": "merge",
+        "srcTask": "5",
+        "targetTask": "4"
+    },
+    {
+        "action": "merge",
+        "srcTask": "5",
+        "targetTask": "6"
+    },
+    {
+        "action": "merge",
+        "srcTask": "6",
+        "targetTask": "5"
+    },
+    {
+        "action": "merge",
+        "srcTask": "6",
+        "targetTask": "7"
+    },
+    {
+        "action": "merge",
+        "srcTask": "7",
+        "targetTask": "6"
+    },
+    {
+        "action": "merge",
+        "srcTask": "7",
+        "targetTask": "8"
+    },
+    {
+        "action": "merge",
+        "srcTask": "8",
+        "targetTask": "7"
+    },
+    {
+        "action": "merge",
+        "srcTask": "8",
+        "targetTask": "9"
+    },
+    {
+        "action": "merge",
+        "srcTask": "9",
+        "targetTask": "8"
+    },
+    {
+        "action": "merge",
+        "srcTask": "9",
+        "targetTask": "10"
+    },
+    {
+        "action": "merge",
+        "srcTask": "10",
+        "targetTask": "9"
+    },
+    {
+        "action": "merge",
+        "srcTask": "10",
+        "targetTask": "11"
+    },
+    {
+        "action": "merge",
+        "srcTask": "11",
+        "targetTask": "10"
+    },
+    {
+        "action": "merge",
+        "srcTask": "11",
+        "targetTask": "12"
+    },
+    {
+        "action": "merge",
+        "srcTask": "12",
+        "targetTask": "11"
+    },
+    {
+        "action": "merge",
+        "srcTask": "12",
+        "targetTask": "13"
+    },
+    {
+        "action": "merge",
+        "srcTask": "13",
+        "targetTask": "12"
+    },
+    {
+        "action": "merge",
+        "srcTask": "13",
+        "targetTask": "14"
+    },
+    {
+        "action": "merge",
+        "srcTask": "14",
+        "targetTask": "13"
+    },
+    {
+        "action": "merge",
+        "srcTask": "14",
+        "targetTask": "15"
+    },
+    {
+        "action": "merge",
+        "srcTask": "15",
+        "targetTask": "14"
+    },
+    {
+        "action": "inline",
+        "task": "6",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "7",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "8",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "11",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "12",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "13",
+        "inlineRegion": "2"
+    },
+    {
+        "action": "inline",
+        "task": "14",
+        "inlineRegion": "2"
+    }
+]

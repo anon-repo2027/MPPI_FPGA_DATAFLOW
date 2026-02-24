@@ -1,0 +1,251 @@
+================================================================
+== Design Size Report
+================================================================
+
+* C-Synthesis has not completed!
+
+* Total Instructions per Compilation Phase
++---------------+--------------+----------------------------------------------------------------------------------+
+| Phase         | Instructions | Description                                                                      |
++---------------+--------------+----------------------------------------------------------------------------------+
+| Compile/Link  | 81,845       | After all functions are compiled and linked into a single design                 |
+| Unroll/Inline | pending      | After user unroll and inline pragmas are applied                                 |
+| Array/Struct  |              | After user array partition and struct aggregate/disaggregate pragmas are applied |
+| Performance   |              | After transformations are applied to meet performance pragma targets             |
+| HW Transforms |              | After hardware transfomations                                                    |
++---------------+--------------+----------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------------------------------+--------------------------+-----------------+
+| Function                                  | Location                 | Compile/Link    |
++-------------------------------------------+--------------------------+-----------------+
+| + calc_control_input                      | mppi_control.cpp:175     | 81,845          |
+|    update_mppi_parameters                 | mppi_control.cpp:143     |    28           |
+|  + generategauss_fixed_point              | gaussian_noise_gen.cpp:4 | 19,780          |
+|   + logf                                  | logfloat.cpp:28          |     4           |
+|      log                                  | hls_log_float.cpp:7      |     2           |
+|     sqrtf                                 | sqrtfloat.cpp:11         |     2           |
+|   + sinf                                  | sincoshotbmfloat.cpp:41  | 9,643           |
+|    + sin                                  | sincoshotbmfloat.cpp:9   | 9,641           |
+|     + sin                                 | hls_hotbm_float.cpp:122  | 9,639           |
+|      + sin_or_cos<float>                  | hls_hotbm.h:209          | 9,637           |
+|         fp_struct                         | x_hls_utils.h:283        |   636 (2 calls) |
+|       + range_redux_payne_hanek_hotb...   | hls_range_redux.h:543    | 2,541           |
+|          fp_struct                        | x_hls_utils.h:283        |   318           |
+|          expv                             | x_hls_utils.h:316        |   109           |
+|          clz<29, 58, 0>                   | hls_normalize.h:69       |   164           |
+|       + range_redux_payne_hanek_hotb...   | hls_range_redux.h:431    | 2,142           |
+|          fp_struct                        | x_hls_utils.h:283        |   318           |
+|          expv                             | x_hls_utils.h:316        |   109           |
+|          table_lookup_4oPi_hotbm<23, ...  | hls_range_redux.h:373    |   264           |
+|          clz<29, 58, 0>                   | hls_normalize.h:69       |   164           |
+|         sin_or_cos_approximation<29,...   | hls_hotbm_float.cpp:8    | 1,526           |
+|       + scaled_fixed2ieee<29, 1>          | x_hls_float_utils.h:256  | 1,482           |
+|          fp_struct                        | x_hls_utils.h:281        |     4           |
+|          clz                              | hls_normalize.h:79       |    29           |
+|          set_mantissa                     | x_hls_utils.h:336        |   111           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|       + to_ieee                           | x_hls_utils.h:346        |   303           |
+|        + to_float                         | x_hls_utils.h:322        |   301           |
+|           data                            | x_hls_utils.h:309        |   279           |
+|   + cosf                                  | sincoshotbmfloat.cpp:44  | 9,643           |
+|    + cos                                  | sincoshotbmfloat.cpp:12  | 9,641           |
+|     + cos                                 | hls_hotbm_float.cpp:126  | 9,639           |
+|      + sin_or_cos<float>                  | hls_hotbm.h:209          | 9,637           |
+|         fp_struct                         | x_hls_utils.h:283        |   636 (2 calls) |
+|       + range_redux_payne_hanek_hotb...   | hls_range_redux.h:543    | 2,541           |
+|          fp_struct                        | x_hls_utils.h:283        |   318           |
+|          expv                             | x_hls_utils.h:316        |   109           |
+|          clz<29, 58, 0>                   | hls_normalize.h:69       |   164           |
+|       + range_redux_payne_hanek_hotb...   | hls_range_redux.h:431    | 2,142           |
+|          fp_struct                        | x_hls_utils.h:283        |   318           |
+|          expv                             | x_hls_utils.h:316        |   109           |
+|          table_lookup_4oPi_hotbm<23, ...  | hls_range_redux.h:373    |   264           |
+|          clz<29, 58, 0>                   | hls_normalize.h:69       |   164           |
+|         sin_or_cos_approximation<29,...   | hls_hotbm_float.cpp:8    | 1,526           |
+|       + scaled_fixed2ieee<29, 1>          | x_hls_float_utils.h:256  | 1,482           |
+|          fp_struct                        | x_hls_utils.h:281        |     4           |
+|          clz                              | hls_normalize.h:79       |    29           |
+|          set_mantissa                     | x_hls_utils.h:336        |   111           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|       + to_ieee                           | x_hls_utils.h:346        |   303           |
+|        + to_float                         | x_hls_utils.h:322        |   301           |
+|           data                            | x_hls_utils.h:309        |   279           |
+|  + initialize_mppi_fixed                  | mppi_control.cpp:328     |    90           |
+|   + inverse2x2_fixed                      | helper.cpp:11            |    37           |
+|      determinant2x2_fixed                 | helper.cpp:4             |    12           |
+|  + precalc_nominal_refs_fixed             | mppi_control.cpp:408     | 30,538          |
+|     nearest_waypoint_fixed                | nearest_neighbor.cpp:4   |    65           |
+|     limit_fixed_safe                      | clip.cpp:3               |    29           |
+|   + state_update_fixed                    | dynamics.cpp:19          | 30,323          |
+|    + cosf                                 | sincoshotbmfloat.cpp:44  | 9,643           |
+|     + cos                                 | sincoshotbmfloat.cpp:12  | 9,641           |
+|      + cos                                | hls_hotbm_float.cpp:126  | 9,639           |
+|       + sin_or_cos<float>                 | hls_hotbm.h:209          | 9,637           |
+|          fp_struct                        | x_hls_utils.h:283        |   636 (2 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:543    | 2,541           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sin_or_cos_approximation<29,...  | hls_hotbm_float.cpp:8    | 1,526           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 1,482           |
+|           fp_struct                       | x_hls_utils.h:281        |     4           |
+|           clz                             | hls_normalize.h:79       |    29           |
+|           set_mantissa                    | x_hls_utils.h:336        |   111           |
+|         + to_ieee                         | x_hls_utils.h:346        |   303           |
+|          + to_float                       | x_hls_utils.h:322        |   301           |
+|             data                          | x_hls_utils.h:309        |   279           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|    + sinf                                 | sincoshotbmfloat.cpp:41  | 9,643           |
+|     + sin                                 | sincoshotbmfloat.cpp:9   | 9,641           |
+|      + sin                                | hls_hotbm_float.cpp:122  | 9,639           |
+|       + sin_or_cos<float>                 | hls_hotbm.h:209          | 9,637           |
+|          fp_struct                        | x_hls_utils.h:283        |   636 (2 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:543    | 2,541           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sin_or_cos_approximation<29,...  | hls_hotbm_float.cpp:8    | 1,526           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 1,482           |
+|           fp_struct                       | x_hls_utils.h:281        |     4           |
+|           clz                             | hls_normalize.h:79       |    29           |
+|           set_mantissa                    | x_hls_utils.h:336        |   111           |
+|         + to_ieee                         | x_hls_utils.h:346        |   303           |
+|          + to_float                       | x_hls_utils.h:322        |   301           |
+|             data                          | x_hls_utils.h:309        |   279           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|    + tanf                                 | sincoshotbmfloat.cpp:70  | 10,998          |
+|     + tan                                 | sincoshotbmfloat.cpp:66  | 10,996          |
+|      + tan                                | hls_hotbm_float.cpp:130  | 10,994          |
+|         fp_struct                         | x_hls_utils.h:283        |   318           |
+|       + generic_sincos<float>             | hls_hotbm.h:129          | 10,622          |
+|          fp_struct                        | x_hls_utils.h:283        |   954 (3 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sincos_approximation<29, 29>...  | hls_hotbm_float.cpp:51   | 2,609           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 2,964 (2 calls) |
+|           fp_struct                       | x_hls_utils.h:281        |     8 (2 calls) |
+|           clz                             | hls_normalize.h:79       |    58 (2 calls) |
+|           set_mantissa                    | x_hls_utils.h:336        |   222 (2 calls) |
+|         + to_ieee                         | x_hls_utils.h:346        |   606 (2 calls) |
+|          + to_float                       | x_hls_utils.h:322        |   602 (2 calls) |
+|             data                          | x_hls_utils.h:309        |   558 (2 calls) |
+|        + to_ieee                          | x_hls_utils.h:346        | 1,212 (4 calls) |
+|         + to_float                        | x_hls_utils.h:322        | 1,204 (4 calls) |
+|            data                           | x_hls_utils.h:309        | 1,116 (4 calls) |
+|  + simulate_trajectories_stream...        | mppi_control.cpp:663     | 30,565          |
+|     limit_fixed_safe                      | clip.cpp:3               |    29           |
+|   + state_update_fixed                    | dynamics.cpp:19          | 30,323          |
+|    + cosf                                 | sincoshotbmfloat.cpp:44  | 9,643           |
+|     + cos                                 | sincoshotbmfloat.cpp:12  | 9,641           |
+|      + cos                                | hls_hotbm_float.cpp:126  | 9,639           |
+|       + sin_or_cos<float>                 | hls_hotbm.h:209          | 9,637           |
+|          fp_struct                        | x_hls_utils.h:283        |   636 (2 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:543    | 2,541           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sin_or_cos_approximation<29,...  | hls_hotbm_float.cpp:8    | 1,526           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 1,482           |
+|           fp_struct                       | x_hls_utils.h:281        |     4           |
+|           clz                             | hls_normalize.h:79       |    29           |
+|           set_mantissa                    | x_hls_utils.h:336        |   111           |
+|         + to_ieee                         | x_hls_utils.h:346        |   303           |
+|          + to_float                       | x_hls_utils.h:322        |   301           |
+|             data                          | x_hls_utils.h:309        |   279           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|    + sinf                                 | sincoshotbmfloat.cpp:41  | 9,643           |
+|     + sin                                 | sincoshotbmfloat.cpp:9   | 9,641           |
+|      + sin                                | hls_hotbm_float.cpp:122  | 9,639           |
+|       + sin_or_cos<float>                 | hls_hotbm.h:209          | 9,637           |
+|          fp_struct                        | x_hls_utils.h:283        |   636 (2 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:543    | 2,541           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sin_or_cos_approximation<29,...  | hls_hotbm_float.cpp:8    | 1,526           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 1,482           |
+|           fp_struct                       | x_hls_utils.h:281        |     4           |
+|           clz                             | hls_normalize.h:79       |    29           |
+|           set_mantissa                    | x_hls_utils.h:336        |   111           |
+|         + to_ieee                         | x_hls_utils.h:346        |   303           |
+|          + to_float                       | x_hls_utils.h:322        |   301           |
+|             data                          | x_hls_utils.h:309        |   279           |
+|        + to_ieee                          | x_hls_utils.h:346        |   303           |
+|         + to_float                        | x_hls_utils.h:322        |   301           |
+|            data                           | x_hls_utils.h:309        |   279           |
+|    + tanf                                 | sincoshotbmfloat.cpp:70  | 10,998          |
+|     + tan                                 | sincoshotbmfloat.cpp:66  | 10,996          |
+|      + tan                                | hls_hotbm_float.cpp:130  | 10,994          |
+|         fp_struct                         | x_hls_utils.h:283        |   318           |
+|       + generic_sincos<float>             | hls_hotbm.h:129          | 10,622          |
+|          fp_struct                        | x_hls_utils.h:283        |   954 (3 calls) |
+|        + range_redux_payne_hanek_hotb...  | hls_range_redux.h:431    | 2,142           |
+|           fp_struct                       | x_hls_utils.h:283        |   318           |
+|           expv                            | x_hls_utils.h:316        |   109           |
+|           table_lookup_4oPi_hotbm<23, ... | hls_range_redux.h:373    |   264           |
+|           clz<29, 58, 0>                  | hls_normalize.h:69       |   164           |
+|          sincos_approximation<29, 29>...  | hls_hotbm_float.cpp:51   | 2,609           |
+|        + scaled_fixed2ieee<29, 1>         | x_hls_float_utils.h:256  | 2,964 (2 calls) |
+|           fp_struct                       | x_hls_utils.h:281        |     8 (2 calls) |
+|           clz                             | hls_normalize.h:79       |    58 (2 calls) |
+|           set_mantissa                    | x_hls_utils.h:336        |   222 (2 calls) |
+|         + to_ieee                         | x_hls_utils.h:346        |   606 (2 calls) |
+|          + to_float                       | x_hls_utils.h:322        |   602 (2 calls) |
+|             data                          | x_hls_utils.h:309        |   558 (2 calls) |
+|        + to_ieee                          | x_hls_utils.h:346        | 1,212 (4 calls) |
+|         + to_float                        | x_hls_utils.h:322        | 1,204 (4 calls) |
+|            data                           | x_hls_utils.h:309        | 1,116 (4 calls) |
+|  + calculate_all_costs_stream             | mppi_control.cpp:797     |   192           |
+|     calculate_stage_cost_fixed            | costs.cpp:3              |    68           |
+|  + compute_weights_stream                 | mppi_control.cpp:930     |   172           |
+|   + compute_weight_fixed                  | compute_weight.cpp:79    |   126           |
+|    + expf                                 | expfloat.cpp:20          |     4           |
+|       exp                                 | hls_exp_float.cpp:15     |     2           |
+|  + accumulate_weighted_noise_st...        | mppi_control.cpp:960     |   285           |
+|     average_fixed                         | smoothning_filter.cpp:4  |   139           |
+|    limit_fixed_safe                       | clip.cpp:3               |    29           |
+|    update_u_prev_buffer                   | mppi_control.cpp:157     |    46           |
++-------------------------------------------+--------------------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

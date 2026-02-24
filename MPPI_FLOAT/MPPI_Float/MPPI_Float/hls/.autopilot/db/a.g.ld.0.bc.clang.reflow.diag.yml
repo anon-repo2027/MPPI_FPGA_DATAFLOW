@@ -1,0 +1,1306 @@
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: mppi_control.cpp, Line: 143, Column: 0 }
+Function:        _Z22update_mppi_parametersfffPfS_
+Args:            
+  - String:          'In function '''
+  - Function:        'update_mppi_parameters(float, float, float, float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 143, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: mppi_control.cpp, Line: 157, Column: 0 }
+Function:        _Z20update_u_prev_bufferPA2_f
+Args:            
+  - String:          'In function '''
+  - Function:        'update_u_prev_buffer(float (*) [2])'
+    DebugLoc:        { File: mppi_control.cpp, Line: 157, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+Function:        _Z25generategauss_fixed_pointPfS_
+Args:            
+  - String:          'In function '''
+  - Function:        'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: mppi_control.cpp, Line: 328, Column: 0 }
+Function:        _Z21initialize_mppi_fixedPfS_PA2_fS_
+Args:            
+  - String:          'In function '''
+  - Function:        'initialize_mppi_fixed(float*, float*, float (*) [2], float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 328, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: helper.cpp, Line: 11, Column: 0 }
+Function:        _Z16inverse2x2_fixedPfS_
+Args:            
+  - String:          'In function '''
+  - Function:        'inverse2x2_fixed(float*, float*)'
+    DebugLoc:        { File: helper.cpp, Line: 11, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Passed
+Pass:            reflow-pragma-conflict-handle
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: helper.cpp, Line: 4, Column: 0 }
+Function:        _Z20determinant2x2_fixedPf
+Args:            
+  - String:          'In function '''
+  - Function:        'determinant2x2_fixed(float*)'
+    DebugLoc:        { File: helper.cpp, Line: 4, Column: 0 }
+  - String:          ''', '
+  - String:          'Pragma conflict happens on '''
+  - String:          INLINE
+  - String:          ''' and '
+  - String:          DATAFLOW
+  - String:          ' pragmas: '
+  - String:          Inline into dataflow region may break the canonical form
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_cpp/objs/src/c++/sincoscordicfloat.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_sincoscordicfloat.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.14.15983
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 48, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_sincoscordicfloat.pp.cpp
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_cpp/objs/src/c++/sincoscordicfloat.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.46091
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.128
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 29, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.257
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 48, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.383
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 69, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.512.46092
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 88, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.641
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 107, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.758
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.887
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 166, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1016
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm_tables_float.h, 
+                       Line: 202, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_hotbm_float.pp.cpp
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_hotbm_float.pp.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/logfloat.cpp', 
+                   Line: 30, Column: 9 }
+Function:        _ZN3hls4logfEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'log_reduce::log(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::logf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/logfloat.cpp', 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 553, Column: 18 }
+Function:        _Z32range_redux_payne_hanek_hotbm_piILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEERi
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm_pi<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&, int&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 550, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 554, Column: 21 }
+Function:        _Z32range_redux_payne_hanek_hotbm_piILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEERi
+Args:            
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 316, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm_pi<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&, int&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 550, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 612, Column: 45 }
+Function:        _Z32range_redux_payne_hanek_hotbm_piILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEERi
+Args:            
+  - Callee:          'unsigned int clz<29, 58, 0>(ap_ufixed<58, 0, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_normalize.h, 
+                       Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm_pi<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&, int&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 550, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 440, Column: 18 }
+Function:        _Z29range_redux_payne_hanek_hotbmILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEE
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 441, Column: 21 }
+Function:        _Z29range_redux_payne_hanek_hotbmILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEE
+Args:            
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 316, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 495, Column: 45 }
+Function:        _Z29range_redux_payne_hanek_hotbmILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEE
+Args:            
+  - Callee:          'unsigned int clz<29, 58, 0>(ap_ufixed<58, 0, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_normalize.h, 
+                       Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                   Line: 467, Column: 15 }
+Function:        _Z29range_redux_payne_hanek_hotbmILi29EfLi29ELi29EEvT0_R7ap_uintILi3EER9ap_ufixedIXT1_ELi0EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_IXT2_ELi0ELS5_5ELS6_3ELi0EER6ap_intIXsr9fp_structIS0_EE8EXP_BITSEE
+Args:            
+  - Callee:          'ap_uint<(((2) * ((23) + (1))) + (29)) + (3)> table_lookup_4oPi_hotbm<23, 29>(int, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 374, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - Callee:          'fp_struct<float>::data() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                   Line: 318, Column: 18 }
+Function:        _Z17scaled_fixed2ieeeILi29ELi1EEv9ap_ufixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EERfi
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 257, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                   Line: 316, Column: 9 }
+Function:        _Z17scaled_fixed2ieeeILi29ELi1EEv9ap_ufixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EERfi
+Args:            
+  - Callee:          'fp_struct<float>::set_mantissa(ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 336, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 257, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                   Line: 283, Column: 16 }
+Function:        _Z17scaled_fixed2ieeeILi29ELi1EEv9ap_ufixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EERfi
+Args:            
+  - Callee:          'clz(int) (.26146)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_normalize.h, 
+                       Line: 79, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 257, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 223, Column: 15 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 237, Column: 4 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'void range_redux_payne_hanek_hotbm_pi<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&, int&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 550, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 239, Column: 4 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 287, Column: 20 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 252, Column: 5 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 257, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 250, Column: 50 }
+Function:        _ZN6hotbm_10sin_or_cosIfEET_S1_bb
+Args:            
+  - Callee:          'ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0> hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>(bool, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                   Line: 123, Column: 12 }
+Function:        _ZN6hotbm_3sinEf
+Args:            
+  - Callee:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hotbm_::sin(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 10, Column: 14 }
+Function:        _ZN3hls5hotbm3sinEf
+Args:            
+  - Callee:          'hotbm_::sin(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::hotbm::sin(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 42, Column: 12 }
+Function:        _ZN3hls4sinfEf
+Args:            
+  - Callee:          'hls::hotbm::sin(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                   Line: 127, Column: 12 }
+Function:        _ZN6hotbm_3cosEf
+Args:            
+  - Callee:          'float hotbm_::sin_or_cos<float>(float, bool, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 210, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hotbm_::cos(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 126, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 13, Column: 14 }
+Function:        _ZN3hls5hotbm3cosEf
+Args:            
+  - Callee:          'hotbm_::cos(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 126, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::hotbm::cos(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 45, Column: 12 }
+Function:        _ZN3hls4cosfEf
+Args:            
+  - Callee:          'hls::hotbm::cos(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::cosf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 44, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 44, Column: 25 }
+Function:        _Z25generategauss_fixed_pointPfS_
+Args:            
+  - Callee:          'hls::cosf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 43, Column: 25 }
+Function:        _Z25generategauss_fixed_pointPfS_
+Args:            
+  - Callee:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 40, Column: 24 }
+Function:        _Z25generategauss_fixed_pointPfS_
+Args:            
+  - Callee:          'hls::sqrtf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp', 
+                       Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 40, Column: 43 }
+Function:        _Z25generategauss_fixed_pointPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::logf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/logfloat.cpp', 
+                       Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: helper.cpp, Line: 13, Column: 22 }
+Function:        _Z16inverse2x2_fixedPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'determinant2x2_fixed(float*)'
+    DebugLoc:        { File: helper.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'inverse2x2_fixed(float*, float*)'
+    DebugLoc:        { File: helper.cpp, Line: 11, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 336, Column: 5 }
+Function:        _Z21initialize_mppi_fixedPfS_PA2_fS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'inverse2x2_fixed(float*, float*)'
+    DebugLoc:        { File: helper.cpp, Line: 11, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'initialize_mppi_fixed(float*, float*, float (*) [2], float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 328, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 145, Column: 18 }
+Function:        _ZN6hotbm_14generic_sincosIfEEvT_PS1_S2_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 156, Column: 5 }
+Function:        _ZN6hotbm_14generic_sincosIfEEvT_PS1_S2_
+Args:            
+  - Callee:          'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h, 
+                       Line: 437, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 159, Column: 5 }
+Function:        _ZN6hotbm_14generic_sincosIfEEvT_PS1_S2_
+Args:            
+  - Callee:          'void hotbm_::value_list<float>::sincos_approximation<29, 29>(ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 57, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 162, Column: 5 }
+Function:        _ZN6hotbm_14generic_sincosIfEEvT_PS1_S2_
+Args:            
+  - Callee:          'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h, 
+                       Line: 257, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                   Line: 200, Column: 24 }
+Function:        _ZN6hotbm_14generic_sincosIfEEvT_PS1_S2_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                   Line: 132, Column: 27 }
+Function:        _ZN6hotbm_3tanEf
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hotbm_::tan(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                   Line: 138, Column: 7 }
+Function:        _ZN6hotbm_3tanEf
+Args:            
+  - Callee:          'void hotbm_::generic_sincos<float>(float, float*, float*)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h, 
+                       Line: 130, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hotbm_::tan(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 130, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 67, Column: 14 }
+Function:        _ZN3hls3tanEf
+Args:            
+  - Callee:          'hotbm_::tan(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp, 
+                       Line: 130, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tan(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                   Line: 71, Column: 12 }
+Function:        _ZN3hls4tanfEf
+Args:            
+  - Callee:          'hls::tan(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 66, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tanf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 70, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 39, Column: 17 }
+Function:        _Z18state_update_fixedPfS_S_f
+Args:            
+  - Callee:          'hls::cosf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'state_update_fixed(float*, float*, float*, float)'
+    DebugLoc:        { File: dynamics.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 40, Column: 17 }
+Function:        _Z18state_update_fixedPfS_S_f
+Args:            
+  - Callee:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'state_update_fixed(float*, float*, float*, float)'
+    DebugLoc:        { File: dynamics.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 41, Column: 17 }
+Function:        _Z18state_update_fixedPfS_S_f
+Args:            
+  - Callee:          'hls::tanf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'state_update_fixed(float*, float*, float*, float)'
+    DebugLoc:        { File: dynamics.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 470, Column: 9 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'nearest_waypoint_fixed(float, float, bool, float*, float (*) [4], int&)'
+    DebugLoc:        { File: nearest_neighbor.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 487, Column: 9 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'state_update_fixed(float*, float*, float*, float)'
+    DebugLoc:        { File: dynamics.cpp, Line: 24, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 41, Column: 17 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - Callee:          'hls::tanf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 485, Column: 9 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - Callee:          'limit_fixed_safe(float*, float*)'
+    DebugLoc:        { File: clip.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 39, Column: 17 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - Callee:          'hls::cosf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 40, Column: 17 }
+Function:        _Z26precalc_nominal_refs_fixedPfPA2_fPA4_fS3_fRi
+Args:            
+  - Callee:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 720, Column: 13 }
+Function:        _Z28simulate_trajectories_streamPfPA2_fS_S_ffRN3hls6streamI14TrajectoryPairLi0EEE
+Args:            
+  - Callee:          'limit_fixed_safe(float*, float*)'
+    DebugLoc:        { File: clip.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 721, Column: 13 }
+Function:        _Z28simulate_trajectories_streamPfPA2_fS_S_ffRN3hls6streamI14TrajectoryPairLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'state_update_fixed(float*, float*, float*, float)'
+    DebugLoc:        { File: dynamics.cpp, Line: 24, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 41, Column: 17 }
+Function:        _Z28simulate_trajectories_streamPfPA2_fS_S_ffRN3hls6streamI14TrajectoryPairLi0EEE
+Args:            
+  - Callee:          'hls::tanf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 40, Column: 17 }
+Function:        _Z28simulate_trajectories_streamPfPA2_fS_S_ffRN3hls6streamI14TrajectoryPairLi0EEE
+Args:            
+  - Callee:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: dynamics.cpp, Line: 39, Column: 17 }
+Function:        _Z28simulate_trajectories_streamPfPA2_fS_S_ffRN3hls6streamI14TrajectoryPairLi0EEE
+Args:            
+  - Callee:          'hls::cosf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 44, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 828, Column: 37 }
+Function:        _Z26calculate_all_costs_streamRN3hls6streamI14TrajectoryPairLi0EEEPA4_fPA2_fPffRNS0_I10CostOutputLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'calculate_stage_cost_fixed(float*, float*, bool)'
+    DebugLoc:        { File: costs.cpp, Line: 3, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calculate_all_costs_stream(hls::stream<TrajectoryPair, 0>&, float (*) [4], float (*) [2], float*, float, hls::stream<CostOutput, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 804, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                   Line: 22, Column: 9 }
+Function:        _ZN3hls4expfEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::expf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: compute_weight.cpp, Line: 125, Column: 25 }
+Function:        _Z20compute_weight_fixedPfS_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::expf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp', 
+                       Line: 20, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_weight_fixed(float*, float*, float)'
+    DebugLoc:        { File: compute_weight.cpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 950, Column: 5 }
+Function:        _Z22compute_weights_streamRN3hls6streamI10CostOutputLi0EEEfRNS0_IfLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_weight_fixed(float*, float*, float)'
+    DebugLoc:        { File: compute_weight.cpp, Line: 79, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_weights_stream(hls::stream<CostOutput, 0>&, float, hls::stream<float, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 934, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 1005, Column: 5 }
+Function:        _Z32accumulate_weighted_noise_streamRN3hls6streamIfLi0EEEPfS3_PA2_fS5_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'average_fixed(float*, float*, int)'
+    DebugLoc:        { File: smoothning_filter.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'accumulate_weighted_noise_stream(hls::stream<float, 0>&, float*, float*, float (*) [2], float (*) [2], float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 967, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 243, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'update_mppi_parameters(float, float, float, float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 143, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 322, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'update_u_prev_buffer(float (*) [2])'
+    DebugLoc:        { File: mppi_control.cpp, Line: 157, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 319, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'limit_fixed_safe(float*, float*)'
+    DebugLoc:        { File: clip.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 246, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'generategauss_fixed_point(float*, float*)'
+    DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 40, Column: 24 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'hls::sqrtf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp', 
+                       Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: mppi_control.cpp, Line: 249, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'initialize_mppi_fixed(float*, float*, float (*) [2], float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 328, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: gaussian_noise_gen.cpp, Line: 43, Column: 25 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'hls::sinf(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp', 
+                       Line: 41, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 296, Column: 2 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 415, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 299, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 671, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 302, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'calculate_all_costs_stream(hls::stream<TrajectoryPair, 0>&, float (*) [4], float (*) [2], float*, float, hls::stream<CostOutput, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 804, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], float*, float*)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 175, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: mppi_control.cpp, Line: 308, Column: 5 }
+Function:        _Z18calc_control_inputPfPA4_fS_S_
+Args:            
+  - Callee:          'compute_weights_stream(hls::stream<CostOutput, 0>&, float, hls::stream<float, 0>&)'
+    DebugLoc:        { File: mppi_control.cpp, Line: 934, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'calc_control_input(float*, float (*) [4], floa

@@ -1,0 +1,225 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=gaussian_noise_gen.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=datatypes.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/datatypes.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=compute_weight.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=helper.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/helper.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=costs.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/costs.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=smoothning_filter.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nearest_neighbor.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/nearest_neighbor.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=mppi_control.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=dynamics.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=clip.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/clip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calc_control_input' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu9eg-ffvb1156-2-e' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=5' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(25)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_address=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(26)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_undefined=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(28)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.dataflow.default_channel=pingpong' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(27)
+INFO: [XFORM 203-701] Set the default channel type in dataflow to ping-pong buffer.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.78 seconds. CPU system time: 0.26 seconds. Elapsed time: 1.94 seconds; current allocated memory: 658.109 MB.
+INFO: [HLS 200-10] Analyzing design file 'clip.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'dynamics.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mppi_control.cpp' ... 
+WARNING: [HLS 207-5570] unexpected pragma argument 'End Of Pramga Line', expects '=' (mppi_control.cpp:671:24)
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:133:25)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:134:25)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:135:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:146:16)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:168:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (mppi_control.cpp:172:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (mppi_control.cpp:186:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-169] There are a total of 8 such instances of non-canonical statements in the dataflow region (mppi_control.cpp:186:9)
+Resolution: For help on HLS 214-169 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-169.html
+WARNING: [HLS 200-471] Dataflow form checks found 8 issue(s) in file mppi_control.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-10] Analyzing design file 'ref_path.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'nearest_neighbor.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'smoothning_filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'costs.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'helper.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'globals.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'compute_weight.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gaussian_noise_gen.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 86.66 seconds. CPU system time: 8.07 seconds. Elapsed time: 94.81 seconds; current allocated memory: 695.289 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 81,896 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 98,208 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 56,205 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 52,958 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 35,310 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45,565 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,809 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-273] In function 'limit_fixed_safe(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (clip.cpp:3:0)
+WARNING: [HLS 214-273] In function 'generategauss_fixed_point(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (gaussian_noise_gen.cpp:4:0)
+WARNING: [HLS 214-273] In function 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (mppi_control.cpp:244:0)
+WARNING: [HLS 214-273] In function 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (mppi_control.cpp:275:0)
+WARNING: [HLS 214-275] In 'KERNEL_LOOP', Pragma conflict happens on 'PIPELINE' and 'UNROLL_OFF' pragmas: Pipeline requires unrolling all sub loops (smoothning_filter.cpp:23:26)
+WARNING: [HLS 214-273] In function 'nearest_waypoint_fixed(float, float, bool, float*, float (*) [4], int&)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (nearest_neighbor.cpp:4:0)
+WARNING: [HLS 214-273] In function 'inverse2x2_fixed(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (helper.cpp:11:0)
+WARNING: [HLS 214-273] In function 'determinant2x2_fixed(float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (helper.cpp:4:0)
+INFO: [HLS 214-131] Inlining function 'log_reduce::log(float)' into 'hls::log(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/logfloat.cpp:9:9)
+INFO: [HLS 214-131] Inlining function 'hls::log(float)' into 'generategauss_fixed_point(float*, float*)' (gaussian_noise_gen.cpp:40:42)
+INFO: [HLS 214-131] Inlining function 'determinant2x2_fixed(float*)' into 'inverse2x2_fixed(float*, float*)' (helper.cpp:13:22)
+INFO: [HLS 214-131] Inlining function 'inverse2x2_fixed(float*, float*)' into 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)' (mppi_control.cpp:252:5)
+INFO: [HLS 214-131] Inlining function 'nearest_waypoint_fixed(float, float, bool, float*, float (*) [4], int&)' into 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' (mppi_control.cpp:299:2)
+INFO: [HLS 214-131] Inlining function 'state_update_fixed(float*, float*, float*, float)' into 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' (mppi_control.cpp:316:9)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' (mppi_control.cpp:314:9)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, hls::stream<TrajectoryBundle, 0>&)' (mppi_control.cpp:444:13)
+INFO: [HLS 214-131] Inlining function 'state_update_fixed(float*, float*, float*, float)' into 'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, hls::stream<TrajectoryBundle, 0>&)' (mppi_control.cpp:445:13)
+INFO: [HLS 214-131] Inlining function 'calculate_stage_cost_fixed(float*, float*, bool)' into 'calculate_all_costs_stream(hls::stream<TrajectoryBundle, 0>&, float (*) [4], float (*) [2], float*, hls::stream<CostOutput, 0>&)' (mppi_control.cpp:521:33)
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp:17:9)
+INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'compute_weight_fixed(float*, float*)' (compute_weight.cpp:49:22)
+INFO: [HLS 214-131] Inlining function 'compute_weight_fixed(float*, float*)' into 'compute_weights_stream(hls::stream<CostOutput, 0>&, hls::stream<float, 0>&)' (mppi_control.cpp:640:5)
+INFO: [HLS 214-131] Inlining function 'average_fixed(float*, float*, int)' into 'accumulate_weighted_noise_stream(hls::stream<float, 0>&, float*, float*, float (*) [2], float (*) [2], float*)' (mppi_control.cpp:695:5)
+INFO: [HLS 214-131] Inlining function 'generategauss_fixed_point(float*, float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:177:2)
+INFO: [HLS 214-131] Inlining function 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:180:5)
+INFO: [HLS 214-131] Inlining function 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:184:5)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:234:5)
+INFO: [HLS 214-377] Adding 'bundle' into disaggregation list because there's array-partition pragma applied on the struct field (mppi_control.cpp:423:9)
+INFO: [HLS 214-210] Disaggregating variable 'bundle' (mppi_control.cpp:422:26)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'FIND_NEAREST_LOOP' is marked as complete unroll implied by the pipeline pragma (nearest_neighbor.cpp:12:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_307_2' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:307:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_317_3' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:317:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_721_5' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:721:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_55_2' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:55:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_1' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:41:19)
+INFO: [HLS 214-291] Loop 'DIM_LOOP' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:18:12)
+INFO: [HLS 214-291] Loop 'KERNEL_LOOP' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:23:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_13_1' is marked as complete unroll implied by the pipeline pragma (compute_weight.cpp:13:19)
+INFO: [HLS 214-291] Loop 'COST_T_LOOP' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:508:22)
+INFO: [HLS 214-291] Loop 'STATE_INIT' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:416:14)
+INFO: [HLS 214-291] Loop 'TRAJECTORY_SIM_T' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:426:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_479_2' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:479:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_480_3' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:480:31)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:289:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:282:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:269:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:268:41)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_193_2' (mppi_control.cpp:193:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'FIND_NEAREST_LOOP' (nearest_neighbor.cpp:12:24) in function 'calc_control_input' completely with a factor of 256 (mppi_control.cpp:105:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'FIND_NEAREST_LOOP' (nearest_neighbor.cpp:12:24) in function 'calc_control_input' has been removed because the loop is unrolled completely (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_307_2' (mppi_control.cpp:307:27) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_317_3' (mppi_control.cpp:317:27) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_284_1' (mppi_control.cpp:284:20) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_265_3' (mppi_control.cpp:265:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_255_1' (mppi_control.cpp:255:23) in function 'calc_control_input' completely with a factor of 32 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_124_1' (mppi_control.cpp:124:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:105:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_734_8' (mppi_control.cpp:734:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_728_6' (mppi_control.cpp:728:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 31 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_721_5' (mppi_control.cpp:721:20) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_2' (smoothning_filter.cpp:55:19) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_1' (smoothning_filter.cpp:41:19) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'DIM_LOOP' (smoothning_filter.cpp:18:12) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:657:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'DIM_LOOP' (smoothning_filter.cpp:18:12) in function 'accumulate_weighted_noise_stream' has been removed because the loop is unrolled completely (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'KERNEL_LOOP' (smoothning_filter.cpp:23:26) in function 'accumulate_weighted_noise_stream' completely with a factor of 10 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_688_2' (mppi_control.cpp:688:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 32 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'W_EPSILON_T' (mppi_control.cpp:677:22) in function 'accumulate_weighted_noise_stream' completely with a factor of 32 (mppi_control.cpp:657:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_663_1' (mppi_control.cpp:663:20) in function 'accumulate_weighted_noise_stream' completely with a factor of 32 (mppi_control.cpp:657:0)
+INFO: [HLS 214-188] Unrolling loop 'NORMALIZE' (compute_weight.cpp:66:16) in function 'compute_weights_stream' partially with a factor of 4 (mppi_control.cpp:624:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_31_2' (compute_weight.cpp:31:19) in function 'compute_weights_stream' completely with a factor of 4 (mppi_control.cpp:624:0)
+INFO: [HLS 214-186] Unrolling loop 'COST_T_LOOP' (mppi_control.cpp:508:22) in function 'calculate_all_costs_stream' completely with a factor of 32 (mppi_control.cpp:495:0)
+INFO: [HLS 214-186] Unrolling loop 'STATE_INIT' (mppi_control.cpp:416:14) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:395:0)
+INFO: [HLS 214-186] Unrolling loop 'TRAJECTORY_SIM_T' (mppi_control.cpp:426:20) in function 'simulate_trajectories_stream' completely with a factor of 32 (mppi_control.cpp:395:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_480_3' (mppi_control.cpp:480:31) in function 'simulate_trajectories_stream' completely with a factor of 2 (mppi_control.cpp:395:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_479_2' (mppi_control.cpp:479:31) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:395:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_401_1' (mppi_control.cpp:401:20) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:395:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:289:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:282:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:269:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:268:41) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<(((2) * ((23) + (1))) + (29)) + (3)> table_lookup_4oPi_hotbm<23, 29>(int, float)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int clz<29, 58, 0>(ap_ufixed<58, 0, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.66.75.86.95)' into 'fp_struct<float>::to_float() const (.63.72.83.92)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:322:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const (.63.72.83.92)' into 'fp_struct<float>::to_ieee() const' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'clz(int) (.26146)' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::set_mantissa(ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0> hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>(bool, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::cos(float)' into 'hls::hotbm::cos(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'hls::hotbm::cos(float)' into 'hls::cos(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:34:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::sin(float)' into 'hls::hotbm::sin(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'hls::hotbm::sin(float)' into 'hls::sin(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:31:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'void hotbm_::value_list<float>::sincos_approximation<29, 29>(ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'hotbm_::tan(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:130:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::tan(float)' into 'hls::tan(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:66:0)
+INFO: [HLS 214-178] Inlining function 'hls::cos(float)' into 'compute_trig(float, float, float&, float&, float&)' (dynamics.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'hls::sin(float)' into 'compute_trig(float, float, float&, float&, float&)' (dynamics.cpp:10:0)
+INFO: [HLS 214-178] Inlining function 'hls::tan(float)' into 'compute_trig(float, float, float&, float&, float&)' (dynamics.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ18calc_control_inputPfPA4_fS_S_E13accel_samples': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:134:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ18calc_control_inputPfPA4_fS_S_E13steer_samples': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:133:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10value_listIfE24sin_or_cos_approximationILi29ELi29EEE9ap_ufixedIXT_ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbR7ap_uintILi3EERS3_IXT_ELi0ELS4_5ELS5_3ELi0EERS3_IXT0_ELi0ELS4_5ELS5_3ELi0EER6ap_intILi8EEE10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:14:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ20compute_weight_fixedPfS_E16sum_accumulators': Complete partitioning on dimension 1. (compute_weight.cpp:27:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ20compute_weight_fixedPfS_E10exp_values': Cyclic partitioning with factor 16 on dimension 1. (compute_weight.cpp:24:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE13neg_cos_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:217:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE13neg_sin_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:216:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:215:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E13neg_cos_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:137:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E13neg_sin_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:136:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:135:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:242:30)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:25:67)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:267:8)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:175:8)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:195:8)
+INFO: [HLS 214-248] Applying array_partition to 'S': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:627:9)
+INFO: [HLS 214-248] Applying array_partition to 'W': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:628:14)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon': Complete partitioning on dimension 2. (mppi_control.cpp:661:12)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon_flat': Complete partitioning on dimension 1. (mppi_control.cpp:687:14)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon_filtered': Complete partitioning on dimension 1. (mppi_control.cpp:687:43)
+INFO: [HLS 214-248] Applying array_partition to 'x0.i': Complete partitioning on dimension 1. (mppi_control.cpp:282:12)
+INFO: [HLS 214-248] Applying array_partition to 'ref_path_array': Complete partitioning on dimension 2. (mppi_control.cpp:105:0)
+ERROR: [HLS 214-256] in function 'calc_control_input(float*, float (*) [4], float*, float*)': Unsupported aggregate pragma/directive on variable 'trajectory_stream' as the bit-width after aggregation (8192) is larger than 4096 (mppi_control.cpp:155:35)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'cost_stream' with compact=bit mode in 64-bits (mppi_control.cpp:156:29)
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 484.31 seconds. Total CPU system time: 14.31 seconds. Total elapsed time: 499.43 seconds; peak allocated memory: 703.332 MB.

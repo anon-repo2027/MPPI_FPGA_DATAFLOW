@@ -1,0 +1,12 @@
+{
+  "name": "MPPI_Float",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "MPPI_Float"
+  },
+  "template": "empty_hls_component"
+}

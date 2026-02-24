@@ -1,0 +1,3 @@
+[INFO] Start simulation of pathtracking with MPPI controller
+[INFO] delta_t: 0.04[s], sim_steps: 1[steps], total_sim_time: 0.04[s]
+Time: 0.00[s], x=0.00000[m], y=0.00000[m], yaw=0.00000[rad], v=5.00000[m/s], steer=0.38890[rad], accel=-0.37818[m/s^2]

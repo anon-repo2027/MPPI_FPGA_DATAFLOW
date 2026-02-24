@@ -1,0 +1,3 @@
+relativeroot=/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float
+original_argv=-c --mode hls --config /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg --work_dir MPPI_Float 
+

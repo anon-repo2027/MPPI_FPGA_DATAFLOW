@@ -1,0 +1,119 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=gaussian_noise_gen.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=datatypes.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/datatypes.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=compute_weight.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=helper.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/helper.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=costs.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/costs.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=smoothning_filter.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nearest_neighbor.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/nearest_neighbor.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=mppi_control.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=dynamics.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=clip.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/clip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calc_control_input' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu9eg-ffvb1156-2-e' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=5' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(25)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_address=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(26)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-200] Cleaning
+slxcmd:0:0: info: [ Cleaned build and execution files ]
+INFO: [HLS 211-200] Compiling source code gaussian_noise_gen.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code compute_weight.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code globals.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code helper.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code costs.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code smoothning_filter.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code nearest_neighbor.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code ref_path.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code mppi_control.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code dynamics.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code clip.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code clip.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code compute_weight.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code costs.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code dynamics.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code gaussian_noise_gen.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code globals.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code helper.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code mppi_control.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code nearest_neighbor.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ref_path.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code smoothning_filter.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+[INFO] Start simulation of pathtracking with MPPI controller
+[INFO] delta_t: 0.04[s], sim_steps: 1[steps], total_sim_time: 0.04[s]
+Time: 0.00[s], x=0.00000[m], y=0.00000[m], yaw=0.00000[rad], v=5.00000[m/s], steer=0.33950[rad], accel=-0.09020[m/s^2]
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+Variable 'bundle' /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:399:0 VariableId 558 is not part of the design space!--
+
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:25:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:28:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:129:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:130:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:258:1)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:176:9)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:116:9)
+WARNING: [SIM 211-205] Code Analyzer does not display the impact of the inline pragma for subfunctions called directly by the dataflow region (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp:6:1)
+WARNING: [SIM 211-205] Code Analyzer does not display the impact of the inline pragma for subfunctions called directly by the dataflow region (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:226:5)
+WARNING: [SIM 211-205] Code Analyzer does not display the impact of the inline pragma for subfunctions called directly by the dataflow region (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:260:1)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp:11:5) as the pipelined function is not the top-level hardware function
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:12:9) as loop pipeline pragma is only valid if:
+- All the subloops of the loop to be pipelined can be fully unrolled
+- All the subloops are perfectly nested in the loop to be pipelined.
+WARNING: [HLS 211-200] /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp:19:13: Ignoring pragma 'pipeline' because it conflicts with pragma 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp:16:9). Reason: Inner loop cannot be pipelined because at least one outer loop has been pipelined
+WARNING: [HLS 211-200] /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:405:13: Ignoring pragma 'unroll' because it conflicts with pragma 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:389:9). Reason: Inner loop cannot be partially unrolled because at least one outer loop has been pipelined
+WARNING: [HLS 211-200] /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:487:13: Ignoring pragma 'unroll' because it conflicts with pragma 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:478:9). Reason: Inner loop cannot be partially unrolled because at least one outer loop has been pipelined
+WARNING: [HLS 211-200] /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp:24:17: Ignoring pragma 'unroll' because it conflicts with pragma 'pipeline' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp:16:9). Reason: Inner loop cannot be partially unrolled because at least one outer loop has been pipelined
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp:29:5) as pragma is duplicated (variable x_k)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:400:9) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable bundle)
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:263:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp:27:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:391:9) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp:27:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:417:13) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp:28:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:606:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:6:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp:607:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'array_partition' (/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:7:5) as variable must not have multiple pragmas if they are not all complete array_partition
+WARNING: [SIM 211-200] /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp:13:9: the dynamic loop had a trip count of min=16 max=16 during C simulation. (#pragma HLS loop_tripcount min=16 max=16)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 134.07 seconds. Total CPU system time: 4.35 seconds. Total elapsed time: 13.6 seconds; peak allocated memory: 657.988 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

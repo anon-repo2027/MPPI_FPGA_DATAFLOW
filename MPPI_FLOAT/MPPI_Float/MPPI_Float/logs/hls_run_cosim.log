@@ -1,0 +1,1029 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float 
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=gaussian_noise_gen.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=datatypes.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/datatypes.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=compute_weight.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=helper.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/helper.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=costs.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/costs.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=smoothning_filter.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nearest_neighbor.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/nearest_neighbor.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=mppi_control.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=dynamics.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=clip.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/clip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calc_control_input' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu9eg-ffvb1156-2-e' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=5' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(25)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_address=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(26)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_undefined=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(28)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.dataflow.default_channel=fifo' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(27)
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis/2024.2/vcxx/libexec//clang++"
+   Compiling apatb_calc_control_input.cpp
+   Compiling clip.cpp_pre.cpp.tb.cpp
+   Compiling compute_weight.cpp_pre.cpp.tb.cpp
+   Compiling costs.cpp_pre.cpp.tb.cpp
+   Compiling dynamics.cpp_pre.cpp.tb.cpp
+   Compiling gaussian_noise_gen.cpp_pre.cpp.tb.cpp
+   Compiling globals.cpp_pre.cpp.tb.cpp
+   Compiling helper.cpp_pre.cpp.tb.cpp
+   Compiling mppi_control.cpp_pre.cpp.tb.cpp
+   Compiling nearest_neighbor.cpp_pre.cpp.tb.cpp
+   Compiling ref_path.cpp_pre.cpp.tb.cpp
+   Compiling smoothning_filter.cpp_pre.cpp.tb.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_calc_control_input_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+[INFO] Start simulation of pathtracking with MPPI controller
+[INFO] delta_t: 0.04[s], sim_steps: 1[steps], total_sim_time: 0.04[s]
+Time: 0.00[s], x=0.00000[m], y=0.00000[m], yaw=0.00000[rad], v=0.00000[m/s], steer=-0.31571[rad], accel=1.51075[m/s^2]
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+WARNING: /tools/Xilinx/Vivado/2024.2/tps/lnx64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Feb 17 10:52:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 17 10:52:18 2026...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_calc_control_input_top glbl -Oenable_linking_all_libraries -prj calc_control_input.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s calc_control_input 
+Multi-threading is on. Using 30 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_sitofp_32ns_32_6_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sitofp_32ns_32_6_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/ip/xil_defaultlib/calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_17_3_1_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_17_3_1_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fifo_w64_d512_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w64_d512_A
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w64_d512_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_22ns_21s_43_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_22ns_21s_43_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_tanf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_tanf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_W_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_W_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbtn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbtn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbJp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbJp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_ctlz_30_30_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_ctlz_30_30_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_28
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_12dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_12dEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K1_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K1_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_310.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_310
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_24
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbKp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbKp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_140_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_140_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_13CeG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_13CeG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_94tde.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_94tde
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_80s_24ns_80_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_80s_24ns_80_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_25_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_25_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_35.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_35
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_33hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_33hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_second_order_float_sin_K0_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_second_order_float_sin_K0_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_43jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_43jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_21
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_u_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_u_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_23s_22ns_45_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_23s_22ns_45_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_1006_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_1006_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fifo_w32_d512_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d512_A
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d512_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_11eOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_11eOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_Pipeline_WRITE_WEIGHTS_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_Pipeline_WRITE_WEIGHTS_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_22.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_22
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_15ns_15ns_30_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_15ns_15ns_30_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_29_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_29_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_312.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_312
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_30
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_316.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_316
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_limit_fixed_safe_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_limit_fixed_safe_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sin_or_cos_float_s_ref_4oPi_table_10043_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sin_or_cos_float_s_ref_4oPi_table_10043_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_MAIN_CONV_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_MAIN_CONV_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_02bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_02bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbun.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevbun
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fsub_32ns_32ns_32_8_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_23_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_23_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_limit_fixed_safe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_limit_fixed_safe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_11yd2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_11yd2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_37.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_37
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_31_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_31_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_ref_path_array_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_ref_path_array_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_63ncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_63ncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_29ns_28ns_57_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_29ns_28ns_57_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_compute_weight_fixed_float_float_float_exp_values_RAM_Hfu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_compute_weight_fixed_float_float_float_exp_values_RAM_Hfu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_all_params.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_all_params
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_22ns_22ns_44_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_22ns_22ns_44_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_72qcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_72qcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_62ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_62ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_117_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_117_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_19.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_19
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_92udo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_92udo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sitofp_32ns_32_6_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sitofp_32ns_32_6_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_W_EPSILON_K_W_EPSILON_T.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_W_EPSILON_K_W_EPSILON_T
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_33_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_33_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_15Ffa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_15Ffa
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_15ns_13s_28_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_15ns_13s_28_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_23fYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_23fYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_sin_K250_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_sin_K250_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_calc_control_input_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_82sc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_82sc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_27_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_27_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_11xdS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_11xdS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_18.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_18
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_15Gfk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_15Gfk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_11_3_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_11_3_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_38.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_38
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_12Aem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_12Aem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_ref_path_array_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_ref_path_array_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_13Bew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_13Bew
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_318.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_318
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_33_4_1_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_33_4_1_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_15ns_15s_30_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_15ns_15s_30_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_calculate_all_costs_stream_Pipeline_COST_K_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_calculate_all_costs_stream_Pipeline_COST_K_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_14Ee0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_14Ee0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_14DeQ.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_14DeQ
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_observed_x_rd_all_params_rd_stage_cost_weight_wr_terminal_cost_weigh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_observed_x_rd_all_params_rd_stage_cost_weight_wr_terminal_cost_weigh
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K0_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K0_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_53lbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_53lbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_generic_sincos_float_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_generic_sincos_float_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fadd_32ns_32ns_32_8_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_RIGHT_BOUNDARY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_RIGHT_BOUNDARY
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_513_8_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_513_8_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_314.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_314
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_84rcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_84rcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_26
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sin_or_cos_float_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sin_or_cos_float_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_12zec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_12zec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_36.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_36
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_13
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_w_epsilon_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_w_epsilon_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_start_for_limit_fixed_safe_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_start_for_limit_fixed_safe_1_U0
+INFO: [VRFC 10-311] analyzing module calc_control_input_start_for_limit_fixed_safe_1_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_25
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_42kbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_42kbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_31.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_31
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_130_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_Pipeline_VITIS_LOOP_130_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_faddfsub_32ns_32ns_32_6_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_ref_path_array_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_ref_path_array_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_29
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_23
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_01cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_01cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fifo_w32_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d4_S
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w32_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_10vdy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_10vdy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_39.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_39
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_32ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_32ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_faddfsub_32ns_32ns_32_8_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_27.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_27
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_sin_K149_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_sin_K149_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_21g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_21g8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_317.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_317
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_15ns_14ns_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_15ns_14ns_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_1023_9_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_1023_9_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_calculate_all_costs_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_calculate_all_costs_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_80s_24ns_80_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_80s_24ns_80_3_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fifo_w384_d512_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w384_d512_A
+INFO: [VRFC 10-311] analyzing module calc_control_input_fifo_w384_d512_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_ctlz_32_32_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_ctlz_32_32_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_52mb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_52mb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_315.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_315
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_74pcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13steer_samples_74pcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_313.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_313
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_10wdI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_simulate_trajectories_stream_Pipeline_TRAJECTORY_SIM_K_p_ZL13accel_samples_10wdI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_319.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_319
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_311.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_accumulate_weighted_noise_stream_Pipeline_VITIS_LOOP_977_311
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_ref_path_array_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_ref_path_array_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_15
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fmul_32ns_32ns_32_5_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/AESL_autobram_observed_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_observed_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_Pipeline_READ_COSTS_LOOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_Pipeline_READ_COSTS_LOOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_fexp_32ns_32ns_32_13_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prev_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_compute_weights_stream_S_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_compute_weights_stream_S_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevb0s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_Block_entry_ZL13steer_samples_0_rd_u_read_rd_ZL7u_write_0_rd_u_read_wr_u_prevb0s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K2_ROM_1P_LUTRAM_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_precalc_nominal_refs_fixed_second_order_float_cos_K2_ROM_1P_LUTRAM_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_mul_30s_29ns_58_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_mul_30s_29ns_58_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/calc_control_input_sparsemux_11_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calc_control_input_sparsemux_11_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_exp_table...
+Compiling package mult_gen_v12_0_22.mult_gen_v12_0_22_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_pkg
+Compiling package floating_point_v7_1_19.flt_utils
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_19.vt2mutils
+Compiling package floating_point_v7_1_19.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.calc_control_input_control_s_axi
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xczu9eg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=13)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=27)\]
+Compiling architecture synth of entity floating_point_v7_1_19.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,bcascreg=0,breg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fsub_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fsub_32ns_32n...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_19.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_19.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fmul_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fmul_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_o...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_flow_control_...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_Block_entry_Z...
+Compiling module xil_defaultlib.calc_control_input_sin_or_cos_fl...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.zero_det_sel [\zero_det_sel(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=26)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=26,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=25,resu...]
+Compiling architecture rtl of entity floating_point_v7_1_19.alignment [\alignment(c_xdevicefamily="zynq...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=14,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub_logic [\addsub_logic(c_xdevicefamily="z...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub [\addsub(c_xdevicefamily="zynqupl...]
+Compiling architecture rtl of entity floating_point_v7_1_19.align_add [\align_add(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=27,resu...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=3,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp [\flt_add_exp(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_faddfsub_32ns...
+Compiling module xil_defaultlib.calc_control_input_faddfsub_32ns...
+Compiling module xil_defaultlib.calc_control_input_mul_22ns_21s_...
+Compiling module xil_defaultlib.calc_control_input_mul_22ns_22ns...
+Compiling module xil_defaultlib.calc_control_input_mul_29ns_28ns...
+Compiling module xil_defaultlib.calc_control_input_mul_80s_24ns_...
+Compiling module xil_defaultlib.calc_control_input_ctlz_30_30_1_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_33_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_17_...
+Compiling module xil_defaultlib.calc_control_input_mul_15ns_15ns...
+Compiling module xil_defaultlib.calc_control_input_mul_15ns_14ns...
+Compiling module xil_defaultlib.calc_control_input_mul_15ns_13s_...
+Compiling module xil_defaultlib.calc_control_input_ctlz_32_32_1_...
+Compiling module xil_defaultlib.calc_control_input_precalc_nomin...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_sin_or_cos_fl...
+Compiling module xil_defaultlib.calc_control_input_sin_or_cos_fl...
+Compiling module xil_defaultlib.calc_control_input_sin_or_cos_fl...
+Compiling module xil_defaultlib.calc_control_input_mul_23s_22ns_...
+Compiling module xil_defaultlib.calc_control_input_mul_30s_29ns_...
+Compiling module xil_defaultlib.calc_control_input_mul_15ns_15s_...
+Compiling module xil_defaultlib.calc_control_input_sin_or_cos_fl...
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_19.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fcmp_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fcmp_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_limit_fixed_s...
+Compiling module xil_defaultlib.calc_control_input_mul_80s_24ns_...
+Compiling module xil_defaultlib.calc_control_input_generic_sinco...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture virtex of entity floating_point_v7_1_19.flt_div_mant [\flt_div_mant(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=13,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=12,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=12,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=12,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_19.flt_div [\flt_div(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fdiv_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fdiv_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_tanf
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=31,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=32)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_19.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture struct of entity floating_point_v7_1_19.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_sitofp_32ns_3...
+Compiling module xil_defaultlib.calc_control_input_sitofp_32ns_3...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_simulate_traj...
+Compiling module xil_defaultlib.calc_control_input_calculate_all...
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_faddfsub_32ns...
+Compiling module xil_defaultlib.calc_control_input_faddfsub_32ns...
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fadd_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fadd_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_calculate_all...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=43)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=9)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=9,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=10)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_exp_specialcase [\flt_exp_specialcase(c_xdevicefa...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay_s [\delay_s(width=10,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay_s [\delay_s(width=9,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.zero_det_sel [\zero_det_sel(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=34,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=34)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=24,resu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=36,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_to_fix_conv [\flt_to_fix_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_exp_ccm [\flt_exp_ccm(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xczu9eg...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_exp_ccm [\flt_exp_ccm(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=33,length=4)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_exp_e2A [\flt_exp_e2A(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_exp_e2zmzm1 [\flt_exp_e2zmzm1(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=14)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110000111100")(0...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_exp_recomb [\flt_exp_recomb(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_exp [\flt_exp(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.calc_control_input_fexp_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_fexp_32ns_32n...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_33_...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_513...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_102...
+Compiling module xil_defaultlib.calc_control_input_compute_weigh...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_23_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_25_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_27_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_29_...
+Compiling module xil_defaultlib.calc_control_input_sparsemux_31_...
+Compiling module xil_defaultlib.calc_control_input_accumulate_we...
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x21318f0]
+[1] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x214646a]
+[2] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x21464ab]
+[3] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x11abc56]
+[4] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x1611091]
+[5] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x11a0c1b]
+[6] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x17e8684]
+[7] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x22fe899]
+[8] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x22fe919]
+[9] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0x22fddf8]
+[10] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0xac221a]
+[11] /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab() [0xacc2ee]
+[12] /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0xbadff) [0x71dfbdebadff]
+[13] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x9caa4) [0x71dfbd69caa4]
+[14] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x129c6c) [0x71dfbd729c6c]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/calc_control_input/xsimk" does not exist 
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 135.84 seconds. Total CPU system time: 5.76 seconds. Total elapsed time: 115.47 seconds; peak allocated memory: 738.973 MB.

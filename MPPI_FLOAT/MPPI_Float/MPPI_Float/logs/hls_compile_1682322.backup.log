@@ -1,0 +1,645 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=gaussian_noise_gen.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/gaussian_noise_gen.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=datatypes.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/datatypes.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=compute_weight.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/compute_weight.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=globals.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/globals.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=helper.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/helper.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=costs.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/costs.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=smoothning_filter.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/smoothning_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=nearest_neighbor.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/nearest_neighbor.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.hpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ref_path.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=mppi_control.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/mppi_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=dynamics.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/dynamics.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=clip.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/clip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb.cpp' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=calc_control_input' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu9eg-ffvb1156-2-e' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1465] Applying ini 'clock=5' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(25)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_address=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(26)
+INFO: [HLS 200-1465] Applying ini 'csim.sanitize_undefined=0' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(28)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.dataflow.default_channel=pingpong' from /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/hls_config.cfg(27)
+INFO: [XFORM 203-701] Set the default channel type in dataflow to ping-pong buffer.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1.81 seconds. CPU system time: 0.21 seconds. Elapsed time: 1.91 seconds; current allocated memory: 657.992 MB.
+INFO: [HLS 200-10] Analyzing design file 'clip.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'dynamics.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mppi_control.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:213:28)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:213:43)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:219:50)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:223:36)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:223:60)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:223:84)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:258:35)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:258:43)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:258:58)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:261:51)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:261:71)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:261:90)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:270:53)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:270:68)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:270:83)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (mppi_control.cpp:270:91)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (mppi_control.cpp:225:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 17 issue(s) in file mppi_control.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-10] Analyzing design file 'ref_path.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'nearest_neighbor.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'smoothning_filter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'costs.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'helper.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'globals.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'compute_weight.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gaussian_noise_gen.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 88.56 seconds. CPU system time: 7.96 seconds. Elapsed time: 96.58 seconds; current allocated memory: 694.824 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 81,944 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 55,376 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,329 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31,613 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,305 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 39,537 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,300 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,320 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,360 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,942 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,734 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,089 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,832 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,339 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,854 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26,312 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/MPPI_Float/hls/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-273] In function 'limit_fixed_safe(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (clip.cpp:3:0)
+WARNING: [HLS 214-273] In function 'update_mppi_parameters(float, float, float, float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (mppi_control.cpp:134:0)
+WARNING: [HLS 214-273] In function 'generategauss_fixed_point(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (gaussian_noise_gen.cpp:4:0)
+WARNING: [HLS 214-273] In function 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (mppi_control.cpp:282:0)
+WARNING: [HLS 214-275] In 'KERNEL_LOOP', Pragma conflict happens on 'PIPELINE' and 'UNROLL_OFF' pragmas: Pipeline requires unrolling all sub loops (smoothning_filter.cpp:23:26)
+WARNING: [HLS 214-273] In function 'inverse2x2_fixed(float*, float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (helper.cpp:11:0)
+WARNING: [HLS 214-273] In function 'determinant2x2_fixed(float*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (helper.cpp:4:0)
+INFO: [HLS 214-131] Inlining function 'log_reduce::log(float)' into 'hls::logf(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/logfloat.cpp:30:9)
+INFO: [HLS 214-131] Inlining function 'hls::logf(float)' into 'generategauss_fixed_point(float*, float*)' (gaussian_noise_gen.cpp:40:43)
+INFO: [HLS 214-131] Inlining function 'determinant2x2_fixed(float*)' into 'inverse2x2_fixed(float*, float*)' (helper.cpp:13:22)
+INFO: [HLS 214-131] Inlining function 'inverse2x2_fixed(float*, float*)' into 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)' (mppi_control.cpp:290:5)
+INFO: [HLS 214-131] Inlining function 'nearest_waypoint_fixed(float, float, bool, float*, float (*) [4], int&)' into 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' (mppi_control.cpp:392:5)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'precalc_nominal_refs_fixed(float*, float (*) [2], float (*) [4], float (*) [4], float, int&)' (mppi_control.cpp:406:9)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'simulate_trajectories_stream(float*, float (*) [2], float*, float*, float, float, hls::stream<TrajectoryPair, 0>&)' (mppi_control.cpp:641:13)
+INFO: [HLS 214-131] Inlining function 'calculate_stage_cost_fixed(float*, float*, bool)' into 'calculate_all_costs_stream(hls::stream<TrajectoryPair, 0>&, float (*) [4], float (*) [2], float*, float, hls::stream<CostOutput, 0>&)' (mppi_control.cpp:749:37)
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::expf(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/expfloat.cpp:22:9)
+INFO: [HLS 214-131] Inlining function 'hls::expf(float)' into 'compute_weight_fixed(float*, float*, float)' (compute_weight.cpp:125:25)
+INFO: [HLS 214-131] Inlining function 'compute_weight_fixed(float*, float*, float)' into 'compute_weights_stream(hls::stream<CostOutput, 0>&, float, hls::stream<float, 0>&)' (mppi_control.cpp:871:5)
+INFO: [HLS 214-131] Inlining function 'average_fixed(float*, float*, int)' into 'accumulate_weighted_noise_stream(hls::stream<float, 0>&, float*, float*, float (*) [2], float (*) [2], float*)' (mppi_control.cpp:926:5)
+INFO: [HLS 214-131] Inlining function 'generategauss_fixed_point(float*, float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:213:2)
+INFO: [HLS 214-131] Inlining function 'update_mppi_parameters(float, float, float, float*, float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:216:5)
+INFO: [HLS 214-131] Inlining function 'initialize_mppi_fixed(float*, float*, float (*) [2], float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:219:5)
+INFO: [HLS 214-131] Inlining function 'limit_fixed_safe(float*, float*)' into 'calc_control_input(float*, float (*) [4], float*, float*)' (mppi_control.cpp:272:5)
+WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (mppi_control.cpp:223:5)
+INFO: [HLS 214-377] Adding 'pair' into disaggregation list because there's array-partition pragma applied on the struct field (costs.cpp:5:9)
+INFO: [HLS 214-210] Disaggregating variable 'pair' (mppi_control.cpp:740:28)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_952_5' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:952:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_55_2' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:55:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_1' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:41:19)
+INFO: [HLS 214-291] Loop 'DIM_LOOP' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:18:12)
+INFO: [HLS 214-291] Loop 'KERNEL_LOOP' is marked as complete unroll implied by the pipeline pragma (smoothning_filter.cpp:23:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_2' is marked as complete unroll implied by the pipeline pragma (compute_weight.cpp:102:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_736_1' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:736:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_743_2' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:743:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_603_1' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:603:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_615_2' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:615:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_624_3' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:624:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_645_4' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:645:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_648_5' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:648:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_654_6' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:654:27)
+INFO: [HLS 214-291] Loop 'FIND_NEAREST_LOOP' is marked as complete unroll implied by the pipeline pragma (nearest_neighbor.cpp:12:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_399_2' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:399:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_412_3' is marked as complete unroll implied by the pipeline pragma (mppi_control.cpp:412:27)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:289:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:282:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:269:5)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:268:41)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_303_3' (mppi_control.cpp:303:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:150:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_293_1' (mppi_control.cpp:293:23) in function 'calc_control_input' completely with a factor of 16 (mppi_control.cpp:150:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_1' (mppi_control.cpp:140:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:150:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_169_1' (mppi_control.cpp:169:23) in function 'calc_control_input' completely with a factor of 4 (mppi_control.cpp:150:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_965_8' (mppi_control.cpp:965:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_959_6' (mppi_control.cpp:959:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 15 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_952_5' (mppi_control.cpp:952:20) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_2' (smoothning_filter.cpp:55:19) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_1' (smoothning_filter.cpp:41:19) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'DIM_LOOP' (smoothning_filter.cpp:18:12) in function 'accumulate_weighted_noise_stream' completely with a factor of 2 (mppi_control.cpp:888:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'DIM_LOOP' (smoothning_filter.cpp:18:12) in function 'accumulate_weighted_noise_stream' has been removed because the loop is unrolled completely (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'KERNEL_LOOP' (smoothning_filter.cpp:23:26) in function 'accumulate_weighted_noise_stream' completely with a factor of 10 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_919_2' (mppi_control.cpp:919:23) in function 'accumulate_weighted_noise_stream' completely with a factor of 16 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_894_1' (mppi_control.cpp:894:20) in function 'accumulate_weighted_noise_stream' completely with a factor of 16 (mppi_control.cpp:888:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_94_1' (compute_weight.cpp:94:19) in function 'compute_weights_stream' completely with a factor of 512 (mppi_control.cpp:855:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_736_1' (mppi_control.cpp:736:27) in function 'calculate_all_costs_stream' completely with a factor of 8 (mppi_control.cpp:725:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_743_2' (mppi_control.cpp:743:31) in function 'calculate_all_costs_stream' completely with a factor of 2 (mppi_control.cpp:725:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_603_1' (mppi_control.cpp:603:20) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_615_2' (mppi_control.cpp:615:20) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_624_3' (mppi_control.cpp:624:20) in function 'simulate_trajectories_stream' completely with a factor of 16 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_648_5' (mppi_control.cpp:648:31) in function 'simulate_trajectories_stream' completely with a factor of 2 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_645_4' (mppi_control.cpp:645:31) in function 'simulate_trajectories_stream' completely with a factor of 4 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_654_6' (mppi_control.cpp:654:27) in function 'simulate_trajectories_stream' completely with a factor of 8 (mppi_control.cpp:592:0)
+INFO: [HLS 214-186] Unrolling loop 'FIND_NEAREST_LOOP' (nearest_neighbor.cpp:12:24) in function 'precalc_nominal_refs_fixed' completely with a factor of 256 (mppi_control.cpp:369:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'FIND_NEAREST_LOOP' (nearest_neighbor.cpp:12:24) in function 'precalc_nominal_refs_fixed' has been removed because the loop is unrolled completely (mppi_control.cpp:369:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_399_2' (mppi_control.cpp:399:27) in function 'precalc_nominal_refs_fixed' completely with a factor of 4 (mppi_control.cpp:369:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_412_3' (mppi_control.cpp:412:27) in function 'precalc_nominal_refs_fixed' completely with a factor of 4 (mppi_control.cpp:369:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_383_1' (mppi_control.cpp:383:20) in function 'precalc_nominal_refs_fixed' completely with a factor of 4 (mppi_control.cpp:369:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:289:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:282:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:269:5) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:268:41) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 2 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1 (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<(((2) * ((23) + (1))) + (29)) + (3)> table_lookup_4oPi_hotbm<23, 29>(int, float)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int clz<29, 58, 0>(ap_ufixed<58, 0, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:437:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.66.75.86.95)' into 'fp_struct<float>::to_float() const (.63.72.83.92)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:322:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const (.63.72.83.92)' into 'fp_struct<float>::to_ieee() const' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'clz(int) (.26146)' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::set_mantissa(ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:257:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0> hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>(bool, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'void scaled_fixed2ieee<29, 1>(ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, float&, int)' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float hotbm_::sin_or_cos<float>(float, bool, bool)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:210:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::cos(float)' into 'hls::hotbm::cos(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'hls::hotbm::cos(float)' into 'hls::cosf(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:44:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::sin(float)' into 'hls::hotbm::sin(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'hls::hotbm::sin(float)' into 'hls::sinf(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:41:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'void range_redux_payne_hanek_hotbm<29, float, 29, 29>(float, ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<fp_struct<float>::EXP_BITS>&)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'void hotbm_::value_list<float>::sincos_approximation<29, 29>(ap_uint<3>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 0, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_int<8>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<29, 1, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'void hotbm_::generic_sincos<float>(float, float*, float*)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:130:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'hotbm_::tan(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:130:0)
+INFO: [HLS 214-178] Inlining function 'hotbm_::tan(float)' into 'hls::tan(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:66:0)
+INFO: [HLS 214-178] Inlining function 'hls::tan(float)' into 'hls::tanf(float)' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/c++/sincoshotbmfloat.cpp:70:0)
+INFO: [HLS 214-178] Inlining function 'hls::cosf(float)' into 'state_update_fixed(float*, float*, float*, float)' (dynamics.cpp:24:0)
+INFO: [HLS 214-178] Inlining function 'hls::sinf(float)' into 'state_update_fixed(float*, float*, float*, float)' (dynamics.cpp:24:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanf(float)' into 'state_update_fixed(float*, float*, float*, float)' (dynamics.cpp:24:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL18nominal_ref_points': Complete partitioning on dimension 1. (mppi_control.cpp:123:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL13accel_samples': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL13steer_samples': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:121:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10value_listIfE24sin_or_cos_approximationILi29ELi29EEE9ap_ufixedIXT_ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbR7ap_uintILi3EERS3_IXT_ELi0ELS4_5ELS5_3ELi0EERS3_IXT0_ELi0ELS4_5ELS5_3ELi0EER6ap_intILi8EEE10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:14:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ20compute_weight_fixedPfS_fE10exp_values': Cyclic partitioning with factor 16 on dimension 1. (compute_weight.cpp:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE13neg_cos_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:217:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE13neg_sin_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:216:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_10sin_or_cosIfEET_S1_bbE10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:215:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E13neg_cos_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:137:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E13neg_sin_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:136:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN6hotbm_14generic_sincosIfEEvT_PS1_S2_E10swap_table': Complete partitioning on dimension 1. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:135:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:242:30)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/src/common/hls_hotbm_float.cpp:25:67)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:267:8)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:175:8)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:195:8)
+INFO: [HLS 214-248] Applying array_partition to 'x_current': Complete partitioning on dimension 1. (mppi_control.cpp:378:12)
+INFO: [HLS 214-248] Applying array_partition to 'x_next': Complete partitioning on dimension 1. (mppi_control.cpp:379:12)
+INFO: [HLS 214-248] Applying array_partition to 'g_result': Complete partitioning on dimension 1. (mppi_control.cpp:390:12)
+INFO: [HLS 214-248] Applying array_partition to 'x_k': Complete partitioning on dimension 1. (mppi_control.cpp:612:16)
+INFO: [HLS 214-248] Applying array_partition to 'g_result': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'min_vals.i': Complete partitioning on dimension 1. (compute_weight.cpp:92:9)
+INFO: [HLS 214-248] Applying array_partition to 'S': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:858:9)
+INFO: [HLS 214-248] Applying array_partition to 'W': Cyclic partitioning with factor 16 on dimension 1. (mppi_control.cpp:859:14)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon': Complete partitioning on dimension 2. (mppi_control.cpp:892:12)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon_flat': Complete partitioning on dimension 1. (mppi_control.cpp:918:14)
+INFO: [HLS 214-248] Applying array_partition to 'w_epsilon_filtered': Complete partitioning on dimension 1. (mppi_control.cpp:918:43)
+INFO: [HLS 214-248] Applying array_partition to 'ref_path_array': Complete partitioning on dimension 2. (mppi_control.cpp:150:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'trajectory_stream' with compact=bit mode in 384-bits (mppi_control.cpp:197:33)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'cost_stream' with compact=bit mode in 64-bits (mppi_control.cpp:198:29)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_921_3> at mppi_control.cpp:921:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_961_7> at mppi_control.cpp:961:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_295_2> at mppi_control.cpp:295:20 
+INFO: [HLS 214-449] Automatically partitioning array 'u_prev' dimension 1 completely based on constant index. (globals.cpp:11:0)
+INFO: [HLS 214-449] Automatically partitioning array 'x0' dimension 1 completely based on constant index. (mppi_control.cpp:184:9)
+INFO: [HLS 214-449] Automatically partitioning array 'u_internal' dimension 1 completely based on constant index. (mppi_control.cpp:187:15)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'u_write' due to pipeline pragma (mppi_control.cpp:951:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'u_prev' due to pipeline pragma (globals.cpp:11:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'x0' due to pipeline pragma (mppi_control.cpp:184:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'u_internal' due to pipeline pragma (mppi_control.cpp:187:15)
+INFO: [HLS 214-248] Applying array_partition to 'u_prev': Complete partitioning on dimension 1. (globals.cpp:11:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL7u_write': Complete partitioning on dimension 2. (mppi_control.cpp:131:0)
+INFO: [HLS 214-248] Applying array_partition to 'x0': Complete partitioning on dimension 1. (mppi_control.cpp:184:9)
+INFO: [HLS 214-248] Applying array_partition to 'u_internal': Complete partitioning on dimension 1. (mppi_control.cpp:187:15)
+INFO: [HLS 214-455] Changing loop 'Loop_VITIS_LOOP_295_2_proc' (mppi_control.cpp:295:20) to a process function for dataflow in function 'calc_control_input' (mppi_control.cpp:295:20)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_102_2' (compute_weight.cpp:102:20) in function 'compute_weights_stream' as it has a variable trip count (compute_weight.cpp:102:20)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 98.22 seconds. CPU system time: 1.5 seconds. Elapsed time: 102.62 seconds; current allocated memory: 705.859 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 705.859 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.46 seconds; current allocated memory: 733.258 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.77 seconds; current allocated memory: 767.336 MB.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1 for loop 'VITIS_LOOP_102_2' (compute_weight.cpp:92:9) in function 'compute_weights_stream'.
+INFO: [XFORM 203-712] Applying dataflow to function 'calc_control_input' (mppi_control.cpp:150:1), detected/extracted 3 process function(s): 
+	 'Block_entry_observed_x_rd_all_params_rd_stage_cost_weight_wr_terminal_cost_weight_wr_proc'
+	 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc'
+	 'Block_entry_u_out_wr_proc'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 268435455 to 256 for loop 'VITIS_LOOP_102_2' in function 'compute_weights_stream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 256) < AVE (= 134217727)) for loop 'VITIS_LOOP_102_2' in function 'compute_weights_stream'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:256:40) to (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/src/hls/utils/x_hls_float_utils.h:319:1) in function 'scaled_fixed2ieee<29, 1>'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:375:9) to (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:287:5) in function 'hotbm_::sin_or_cos<float>'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:129:25) to (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:205:3) in function 'hotbm_::generic_sincos<float>'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (mppi_control.cpp:731:9) to (mppi_control.cpp:728:15) in function 'calculate_all_costs_stream'... converting 49 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (smoothning_filter.cpp:15:39) to (smoothning_filter.cpp:32:33) in function 'accumulate_weighted_noise_stream'... converting 19 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (smoothning_filter.cpp:21:19) to (smoothning_filter.cpp:32:33) in function 'accumulate_weighted_noise_stream'... converting 17 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'scaled_fixed2ieee<29, 1>' into 'hotbm_::generic_sincos<float>' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:162) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 4.16 seconds; current allocated memory: 819.945 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'W_EPSILON_K'(mppi_control.cpp:901:18) and 'W_EPSILON_T'(mppi_control.cpp:908:22) in function 'accumulate_weighted_noise_stream' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'W_EPSILON_K' (mppi_control.cpp:901:18) in function 'accumulate_weighted_noise_stream'.
+WARNING: [HLS 200-1449] Process Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3.36 seconds. CPU system time: 0.14 seconds. Elapsed time: 3.5 seconds; current allocated memory: 1.568 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'calc_control_input' ...
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.15' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_15'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.14' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_14'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.13' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_13'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.12' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_12'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.11' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_11'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.10' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_10'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.9' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_9'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.8' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_8'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.7' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_7'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.6' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_6'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.5' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_5'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.4' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_4'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.3' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_3'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.2' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_2'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin.1' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_1'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin'.
+WARNING: [SYN 201-103] Legalizing function name 'sin_or_cos<float>' to 'sin_or_cos_float_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_sincos<float>' to 'generic_sincos_float_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_entry__ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc' to 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc'.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'ROM_1P_LUTRAM' (/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:375->/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_range_redux.h:467->/wrk/ci/prod/2024.2/hls_product/continuous/495/2024.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_hotbm.h:239): 'ref_4oPi_table_100' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'u_read' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'u_read' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'u_read' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_0' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_1' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_2' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_3' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_4' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_5' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_6' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_7' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_8' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_9' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_10' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_11' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_12' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_13' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_14' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'p_ZL18nominal_ref_points_15' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply memory assignment of 'RAM_2P_BRAM': 'u_read' does not exist or is optimized away.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_observed_x_rd_all_params_rd_stage_cost_weight_wr_terminal_cost_weigh' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.37 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.572 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.572 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.572 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.572 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.572 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.572 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.573 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.573 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.574 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.574 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.575 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.575 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.576 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.576 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.576 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.576 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.576 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.576 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.576 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.576 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.577 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.577 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.577 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.577 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.577 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.577 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_ZL13steer_samples_0_rd_u_read_rd_u_read_wr_u_prev_0_fb_proc_Pipelin' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.577 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.577 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'precalc_nominal_refs_fixed_Pipeline_FIND_NEAREST_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FIND_NEAREST_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 28, loop 'FIND_NEAREST_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.578 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.578 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sin_or_cos_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sin_or_cos<float>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 15, Final II = 15, Depth = 15, function 'sin_or_cos<float>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.579 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.579 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_sincos_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'generic_sincos<float>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 45, Final II = 17, Depth = 17, function 'generic_sincos<float>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.581 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.581 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'state_update_fixed' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'state_update_fixed'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 45, Depth = 52, function 'state_update_fixed'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.582 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.582 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'precalc_nominal_refs_fixed_Pipeline_PRE_CALC_REF_T' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'PRE_CALC_REF_T'.
+WARNING: [HLS 200-875] II = 47 is infeasible due to multiple pipeline iteration latency = 52 and incompatible II = 45 of 'call' operation 128 bit ('call_ret_i', mppi_control.cpp:409) to 'state_update_fixed'.
+Resolution: For help on HLS 200-875 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-875.html
+WARNING: [HLS 200-875] II = 48 is infeasible due to multiple pipeline iteration latency = 52 and incompatible II = 45 of 'call' operation 128 bit ('call_ret_i', mppi_control.cpp:409) to 'state_update_fixed'.
+Resolution: For help on HLS 200-875 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-875.html
+WARNING: [HLS 200-875] II = 49 is infeasible due to multiple pipeline iteration latency = 52 and incompatible II = 45 of 'call' operation 128 bit ('call_ret_i', mppi_control.cpp:409) to 'state_update_fixed'.
+Resolution: For help on HLS 200-875 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-875.html
+WARNING: [HLS 200-875] II = 50 is infeasible due to multiple pipeline iteration latency = 52 and incompatible II = 45 of 'call' operation 128 bit ('call_ret_i', mppi_control.cpp:409) to 'state_update_fixed'.
+Resolution: For help on HLS 200-875 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-875.html
+WARNING: [HLS 200-875] II = 51 is infeasible due to multiple pipeline iteration latency = 52 and incompatible II = 45 of 'call' operation 128 bit ('call_ret_i', mppi_control.cpp:409) to 'state_update_fixed'.
+Resolution: For help on HLS 200-875 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-875.html
