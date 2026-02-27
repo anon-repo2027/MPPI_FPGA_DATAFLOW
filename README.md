@@ -26,15 +26,24 @@ The dataflow model consists of three main stages:
 
 Each stage operates on batches of P trajectories, with K/P batches processed per control update, allowing continuous FIFO streaming between stages.
 
-### Hardware Architecture
+### GPU Architecture and Its Limitations
 
 ![MPPI GPU V2 Architecture](images/mppi_gpu_v2.jpg)
 
-The hardware implementation uses:
-- Shared memory for trajectory and cost data
-- Multi-threaded processing with block synchronization
-- Global synchronization barriers between stages
-- Optimized DSP48E utilization for mathematical operations
+While GPUs enable parallel trajectory execution, they suffer from fundamental architectural bottlenecks when applied to MPPI:
+
+**Sequential Prediction Within Threads**: Even when each trajectory executes in parallel across GPU threads, the prediction loop runs sequentially within each thread. This sequential dependence on the horizon length N becomes the dominant latency factor.
+
+**Hardware Hierarchy Bottleneck**: The GPU's hardware hierarchy severely penalizes MPPI's synchronization requirements. All K trajectories cannot be consolidated into a single thread block due to hard resource limits (register files and shared memory per Streaming Multiprocessor). Consequently, the workload must be partitioned across a grid of multiple blocks, necessitating **global synchronization barriers** that force the algorithm to rely on high-latency, off-chip global memory transactions instead of fast on-chip shared memory used within individual blocks. Repeated synchronizations and irregular memory access patterns severely limit hardware utilization.
+
+**Scalability Saturation**: While GPUs theoretically support scaling K to tens of thousands of threads, MPPI performance effectively saturates at relatively low sample counts (~10³ trajectories). This is due to the fundamental O(1/√N) convergence rate of the underlying Monte Carlo estimators in Information Theoretic MPC. Over-provisioning the GPU with excessive thread blocks merely exacerbates global synchronization latency and wastes power without meaningful improvement in control authority.
+
+**Why FPGA Dataflow is Superior**: The FPGA dataflow architecture elegantly sidesteps these limitations through:
+- **Pipeline Parallelism**: Stages operate continuously without global synchronization barriers
+- **Fine-grained Streaming**: Trajectories flow through stages via FIFO channels, eliminating off-chip memory bottlenecks
+- **Customizable Resource Allocation**: Unroll factors and array partitioning can be tuned to hardware capabilities
+- **Deterministic Latency**: No thread scheduling overhead or memory coherency stalls
+
 
 ## Getting Started with Vitis HLS
 
