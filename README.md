@@ -165,8 +165,8 @@ Creates an IP package for integration into Vivado projects (in `Vivado_ws/`).
 Edit `globals.hpp` to configure:
 
 ```cpp
-#define K = 256              // Number of trajectories
-#define N = 64               // Horizon length
+#define K = 512/1024/2048   // Number of trajectories
+#define N = 16/32           // Horizon length
 #define CONTROL_SIZE = 2    // Input dimensionality
 #define STATE_SIZE = 4      // State dimensionality
 ```
