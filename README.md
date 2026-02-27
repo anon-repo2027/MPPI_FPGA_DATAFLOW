@@ -17,7 +17,7 @@ The FPGA dataflow implementation processes multiple parallel trajectories with p
 
 ### Dataflow Architecture
 
-![MPPI Dataflow Algorithm](dataflow_mppi.jpg)
+![MPPI Dataflow Algorithm](images/dataflow_mppi.jpg)
 
 The dataflow model consists of three main stages:
 - **Trajectory Rollout (Purple)**: N-step horizon dynamics simulation, deeply pipelined
@@ -28,7 +28,7 @@ Each stage operates on batches of P trajectories, with K/P batches processed per
 
 ### Hardware Architecture
 
-![MPPI GPU V2 Architecture](mppi_gpu_v2.jpg)
+![MPPI GPU V2 Architecture](images/mppi_gpu_v2.jpg)
 
 The hardware implementation uses:
 - Shared memory for trajectory and cost data
