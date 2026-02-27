@@ -1,15 +1,12 @@
 #include "globals.hpp"
 
-void limit_fixed_safe(pos_nn v[dim_u], pos_nn limit[dim_u]) {
+void limit_fixed_safe(float v[dim_u], float limit[dim_u]) {
 #pragma HLS inline off
-// #pragma HLS INTERFACE bram storage_type=ram_1p port=v depth=2
-// #pragma HLS INTERFACE bram storage_type=ram_1p port=limit depth=2
-// #pragma HLS INTERFACE s_axilite port=return bundle=control
 
-    pos_nn steer = v[0];
-    pos_nn accel = v[1];
+    float steer = v[0];
+    float accel = v[1];
 
-    pos_nn steer_lim, accel_lim;
+    float steer_lim, accel_lim;
 
     // Clamp steering input
     if (steer >  max_steer_abs) {

@@ -1,7 +1,7 @@
 #include "globals.hpp"
 
 // ✅ HIGH-QUALITY XORSHIFT: Tested shift patterns
-void generategauss_fixed_point(sample_gauss steer_samples[MAX_K*MAX_T], sample_gauss accel_samples[MAX_K*MAX_T]) {
+void generategauss_fixed_point(float steer_samples[MAX_K*MAX_T], float accel_samples[MAX_K*MAX_T]) {
     // #pragma HLS INLINE
 #pragma HLS inline
     ap_uint<32> seed1 = 0x9E3779B9;
@@ -44,8 +44,8 @@ GENERATE_LOOP:
         float cos_val = hls::cosf(theta);
 
         // ONLY NOW cast to fixed-point for storage
-        steer_samples[idx] = sample_gauss(radius * sin_val);
-        accel_samples[idx] = sample_gauss(radius * cos_val);
+        steer_samples[idx] = float(radius * sin_val);
+        accel_samples[idx] = float(radius * cos_val);
     }
 
 }

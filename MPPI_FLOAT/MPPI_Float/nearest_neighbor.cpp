@@ -1,12 +1,12 @@
 #include "globals.hpp"
 
 
-void nearest_waypoint_fixed(pos_nn x, pos_nn y, bool update_prev_idx, pos_nn output[dim_x], pos_nn ref_path[1201][4], int &prev_idx_inout) {
+void nearest_waypoint_fixed(float x, float y, bool update_prev_idx, float output[dim_x], float ref_path[1201][4], int &prev_idx_inout) {
 #pragma HLS inline
     int search_idx_len = 256;
     int prev_idx = prev_idx_inout;
 
-    cost_nn min_d = 4096.0f;  // Increased to 4096 to be safe
+    float min_d = 4096.0f;  // Increased to 4096 to be safe
     int nearest_idx = 0;
 
     FIND_NEAREST_LOOP: for (int i = 0; i < search_idx_len; i++) {
@@ -17,13 +17,13 @@ void nearest_waypoint_fixed(pos_nn x, pos_nn y, bool update_prev_idx, pos_nn out
         int current_idx = (temp_idx >= 1201) ? temp_idx - 1201 : temp_idx;
         
         // Load from BRAM - already in fixed-point
-        pos_nn ref_x = ref_path[current_idx][0];
-        pos_nn ref_y = ref_path[current_idx][1];
+        float ref_x = ref_path[current_idx][0];
+        float ref_y = ref_path[current_idx][1];
 
         // All arithmetic in fixed-point
-        pos_nn dx = x - ref_x;
-        pos_nn dy = y - ref_y;
-        cost_nn d_sq = (cost_nn)(dx * dx) + (cost_nn)(dy * dy);
+        float dx = x - ref_x;
+        float dy = y - ref_y;
+        float d_sq = (float)(dx * dx) + (float)(dy * dy);
 
 
         if (d_sq < min_d) {
@@ -42,6 +42,5 @@ void nearest_waypoint_fixed(pos_nn x, pos_nn y, bool update_prev_idx, pos_nn out
     if (update_prev_idx) {
         prev_idx_inout = nearest_idx;
     }
-    // prev_idx_out = prev_waypoints_idx;
 }
 

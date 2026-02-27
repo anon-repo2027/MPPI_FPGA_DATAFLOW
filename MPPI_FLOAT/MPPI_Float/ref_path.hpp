@@ -1,6 +1,6 @@
 #ifndef REF_PATH_HPP
 #define REF_PATH_HPP
-#include "datatypes.hpp"
+
 
 struct waypoint{
     float ref_x;
@@ -11,6 +11,6 @@ struct waypoint{
 
 // extern waypoint ref_path_array[1201];
 // extern float ref_path_array[4804];
-extern pos_nn ref_path_array[1201][4];
+extern float ref_path_array[1201][4];
 
 #endif

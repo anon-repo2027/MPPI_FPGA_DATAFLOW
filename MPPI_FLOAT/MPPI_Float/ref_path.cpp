@@ -827,7 +827,7 @@
 // filepath: /home/tanmay-desai/MPPI_FPGA_DATAFLOW/MPPI_FLOAT_KINEMATIC/MPPI_Float/ref_path.cpp
 #include "ref_path.hpp"
 
-pos_nn ref_path_array[1201][4] = {
+float ref_path_array[1201][4] = {
     {0.0000, 0.0000, 0.0000, 5.0},
     {0.2500, 0.0000, 0.0000, 5.0},
     {0.5000, 0.0000, 0.0000, 5.0},

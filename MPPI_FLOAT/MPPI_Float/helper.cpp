@@ -1,17 +1,17 @@
 #include "globals.hpp"
 
 // Calculate determinant of 2×2 matrix [a b; c d] stored as [a, b, c, d]
-dsp_optimal_t determinant2x2_fixed(dsp_optimal_t matrix[4]) {
+float determinant2x2_fixed(float matrix[4]) {
     #pragma HLS inline
     // det = a*d – b*c
     return matrix[0] * matrix[3] - matrix[1] * matrix[2];
 }
 
 // Compute inverse of 2×2 matrix: result = (1/det) * [ d, –b; –c, a ]
-void inverse2x2_fixed(dsp_optimal_t matrix[4], dsp_optimal_t result[4]) {
+void inverse2x2_fixed(float matrix[4], float result[4]) {
     #pragma HLS inline
-    dsp_optimal_t det    = determinant2x2_fixed(matrix);
-    dsp_optimal_t invDet = dsp_optimal_t(1.0f) / det;
+    float det    = determinant2x2_fixed(matrix);
+    float invDet = float(1.0f) / det;
 
     // Unroll to compute all four entries concurrently
     // #pragma HLS UNROLL factor=4
@@ -23,12 +23,12 @@ void inverse2x2_fixed(dsp_optimal_t matrix[4], dsp_optimal_t result[4]) {
 
 // Matrix-vector multiply: result = matrix * vec
 // matrix as [m00,m01,m10,m11], vec as [v0,v1]
-void matVecMult_fixed(dsp_optimal_t matrix[4], dsp_optimal_t vec[2], dsp_optimal_t result[2]) {
+void matVecMult_fixed(float matrix[4], float vec[2], float result[2]) {
     #pragma HLS inline
     // Pipeline each output element
     MATVEC_LOOP: for (int i = 0; i < 2; ++i) {
         #pragma HLS PIPELINE II=1
-        dsp_optimal_t acc = dsp_optimal_t(0.0f);
+        float acc = float(0.0f);
         // Unroll inner loop
         
         for (int j = 0; j < 2; ++j) {
@@ -40,9 +40,9 @@ void matVecMult_fixed(dsp_optimal_t matrix[4], dsp_optimal_t vec[2], dsp_optimal
 }
 
 // Dot product of two 2-element vectors
-dsp_optimal_t dotProduct_fixed(dsp_optimal_t vec1[2], dsp_optimal_t vec2[2]) {
+float dotProduct_fixed(float vec1[2], float vec2[2]) {
     #pragma HLS inline
-    dsp_optimal_t sum = dsp_optimal_t(0.0f);
+    float sum = float(0.0f);
     // Unroll both iterations for parallel multiply-add
     
     for (int i = 0; i < 2; ++i) {
