@@ -15,16 +15,6 @@ MPPI is a sampling-based optimal control algorithm that:
 
 The FPGA dataflow implementation processes multiple parallel trajectories with pipelined stages for trajectory rollout, cost evaluation, and importance weighting.
 
-### Dataflow Architecture
-
-![MPPI Dataflow Algorithm](images/dataflow_mppi.jpg)
-
-The dataflow model consists of three main stages:
-- **Trajectory Rollout (Purple)**: N-step horizon dynamics simulation, deeply pipelined
-- **Cost Evaluation (Blue)**: Cost accumulation for each trajectory
-- **Importance Weighting (Green)**: Weight computation and control policy update
-
-Each stage operates on batches of P trajectories, with K/P batches processed per control update, allowing continuous FIFO streaming between stages.
 
 ### GPU Architecture and Its Limitations
 
@@ -44,6 +34,16 @@ While GPUs enable parallel trajectory execution, they suffer from fundamental ar
 - **Customizable Resource Allocation**: Unroll factors and array partitioning can be tuned to hardware capabilities
 - **Deterministic Latency**: No thread scheduling overhead or memory coherency stalls
 
+### Dataflow Architecture
+
+![MPPI Dataflow Algorithm](images/dataflow_mppi.jpg)
+
+The dataflow model consists of three main stages:
+- **Trajectory Rollout (Purple)**: N-step horizon dynamics simulation, deeply pipelined
+- **Cost Evaluation (Blue)**: Cost accumulation for each trajectory
+- **Importance Weighting (Green)**: Weight computation and control policy update
+
+Each stage operates on batches of P trajectories, with K/P batches processed per control update, allowing continuous FIFO streaming between stages.
 
 ## Getting Started with Vitis HLS
 
